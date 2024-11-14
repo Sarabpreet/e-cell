@@ -20,11 +20,11 @@ const HomePage = () => {
                     </a>
                 </div>
 
-                <div className="flex-1 flex justify-center mb-8 lg:mb-0">
+                <div className="flex-1 h-auto w-full flex justify-center mb-8 lg:mb-0">
                     <InteractiveImage
                         source={logo}
                         alt="logo"
-                        className={"w-full h-auto transition-transform duration-100 ease-out"}
+                        className={"transition-transform duration-100 ease-out"}
                     />
                 </div>
             </section>
