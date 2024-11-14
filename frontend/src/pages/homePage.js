@@ -28,6 +28,24 @@ const HomePage = () => {
                     />
                 </div>
             </section>
+
+            <section className="flex flex-col items-center justify-center bg-blue-50 h-64 w-screen">
+                <h2 className="text-center mb-6 text-3xl font-semibold text-gray-900">Results that matter</h2>
+                <div className="flex space-x-8 w-full max-w-screen-lg justify-between px-8">
+                    <div className="flex flex-col items-center">
+                        <div className="text-4xl font-bold text-blue-600">500+</div>
+                        <div className="text-lg text-gray-600">Students</div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="text-4xl font-bold text-blue-600">50+</div>
+                        <div className="text-lg text-gray-600">Startups</div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="text-4xl font-bold text-blue-600">30+</div>
+                        <div className="text-lg text-gray-600">Mentors</div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
