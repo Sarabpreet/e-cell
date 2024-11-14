@@ -1,8 +1,15 @@
 import React from 'react';
 import logo from '../logo.svg';
 import InteractiveImage from '../components/interactiveImgHome';
+import StatCard from '../components/statCardHome';
 
 const HomePage = () => {
+    const stats = [
+        { icon: null, number: '500+', label: 'Students' },
+        { icon: null, number: '30+', label: 'Startups' },
+        { icon: null, number: '20+', label: 'Mentors' },
+    ];
+
     return (
         <div>
             <section className='flex flex-col-reverse lg:flex-row items-center
@@ -29,21 +36,13 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="flex flex-col items-center justify-center bg-blue-50 h-64 w-screen">
-                <h2 className="text-center mb-6 text-3xl font-semibold text-gray-900">Results that matter</h2>
-                <div className="flex space-x-8 w-full max-w-screen-lg justify-between px-8">
-                    <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold text-blue-600">500+</div>
-                        <div className="text-lg text-gray-600">Students</div>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold text-blue-600">50+</div>
-                        <div className="text-lg text-gray-600">Startups</div>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold text-blue-600">30+</div>
-                        <div className="text-lg text-gray-600">Mentors</div>
-                    </div>
+            <section className="container bg-gray-100 py-8  mx-auto px-4 text-center h-auto md:h-64 w-screen">
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Results that matter</h2>
+
+                <div className="flex flex-col md:flex-row items-center justify-evenly space-y-4 md:space-y-0">
+                    {stats.map((stat, index) => (
+                        <StatCard key={index} number={stat.number} label={stat.label} />
+                    ))}
                 </div>
             </section>
         </div>
