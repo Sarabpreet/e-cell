@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import logo from "../placeholder.svg";
 
-import InteractiveImage from '../components/interactiveImgHome';
 import StatCard from '../components/statCardHome';
 import InitiativeCard from '../components/initiativeCardHome';
+import InteractiveImage from '../components/interactiveImgHome';
 
 const HomePage = () => {
     // Parallax Handling
@@ -138,6 +138,16 @@ const HomePage = () => {
                     </div>
                 </section>
 
+                {/* To Top Button */}
+                <button
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="fixed bottom-8 right-8 z-50 bg-purple-600 hover:bg-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors"
+                    aria-label="Scroll to top"
+                >
+                    <svg className="w-6 h-6 transform rotate-180" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </button>
             </main>
 
             {/* // Footer */}
