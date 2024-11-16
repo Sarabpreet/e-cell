@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from "../placeholder.svg";
@@ -7,6 +7,17 @@ import InteractiveImage from '../components/interactiveImgHome';
 import StatCard from '../components/statCardHome';
 
 const HomePage = () => {
+    // Parallax Handling
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => setScrollY(window.scrollY)
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, []);
+
+    const parallaxStyle = { transform: `translateY(${scrollY * 0.5}px)` };
+
     // Data Handling
     const stats = [
         { icon: null, number: '500+', label: 'Students' },
@@ -23,7 +34,7 @@ const HomePage = () => {
                 <section className="relative min-h-screen flex items-center bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900">
                     {/* Starry Background */}
                     <div className="absolute inset-0 overflow-hidden">
-                        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==')]"></div>
+                        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==')]" style={parallaxStyle}></div>
                     </div>
 
                     {/* Hero Container */}
