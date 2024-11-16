@@ -118,7 +118,26 @@ const HomePage = () => {
                     </div>
                 </section>
 
-                
+                {/* Blogs Section */}
+                <section className="py-16 bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900">
+                    <div className="container mx-auto px-4">
+                        <div className="flex flex-col md:flex-row items-center justify-around">
+                            <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
+                                <h2 className="text-4xl font-bold mb-4">Discover Our Insights</h2>
+                                <p className="text-xl text-gray-300">
+                                    Explore Blogs & Stay Updated with E-Cell MIT!
+                                </p>
+                            </div>
+                            <Link
+                                to=""
+                                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition-colors"
+                            >
+                                Explore Blogs
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
             </main>
 
             {/* // Footer */}
