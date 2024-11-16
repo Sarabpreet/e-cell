@@ -5,6 +5,7 @@ import logo from "../placeholder.svg";
 
 import InteractiveImage from '../components/interactiveImgHome';
 import StatCard from '../components/statCardHome';
+import InitiativeCard from '../components/initiativeCardHome';
 
 const HomePage = () => {
     // Parallax Handling
@@ -24,6 +25,28 @@ const HomePage = () => {
         { icon: null, number: '30+', label: 'Startups' },
         { icon: null, number: '20+', label: 'Mentors' },
     ];
+
+    const initiatives = [
+        {
+            heading: "STARTUP SCOOP",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
+            isEnabled: true,
+            link: "#",
+        },
+        {
+            heading: "SSP",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
+            isEnabled: false,
+            // link: "#",
+        },
+        {
+            heading: "MES",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
+            isEnabled: true,
+            link: "#",
+        },
+    ];
+
 
     return (
         <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
@@ -81,7 +104,23 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Initiatives Section */}
+                <section className="py-32 bg-gray-900 border-t border-gray-600">
+                    <div className="container mx-auto px-32">
+                        <h2 className="text-4xl font-bold mb-12 text-center">OUR INITIATIVES</h2>
+
+                        <div className="grid md:grid-cols-3 gap-8">
+                            {initiatives.map((initiative, index) => (
+                                <InitiativeCard key={index} heading={initiative.heading} description={initiative.description} isEnabled={initiative.isEnabled} link={initiative.link} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                
             </main>
+
             {/* // Footer */}
         </div>
     );
