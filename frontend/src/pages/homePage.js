@@ -1,9 +1,13 @@
 import React from 'react';
-import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
+
+import logo from "../placeholder.svg";
+
 import InteractiveImage from '../components/interactiveImgHome';
 import StatCard from '../components/statCardHome';
 
 const HomePage = () => {
+    // Data Handling
     const stats = [
         { icon: null, number: '500+', label: 'Students' },
         { icon: null, number: '30+', label: 'Startups' },
@@ -11,40 +15,63 @@ const HomePage = () => {
     ];
 
     return (
-        <div>
-            <section className='flex flex-col-reverse lg:flex-row items-center
-            bg-gray-100
-            h-screen w-screen p-8 lg:p-16'>
-                <div className="flex-1 lg:pr-8 text-center lg:text-left">
-                    <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-                        Welcome to E-Cell MIT
-                    </h1>
-                    <p className="text-gray-700 text-lg mb-6">
-                        A brief description about the opportunities and what they will get to experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.
-                    </p>
-                    <a href="#join-us" className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium shadow-lg hover:bg-blue-700 transition duration-300">
-                        Know More
-                    </a>
-                </div>
+        <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
+            {/* // Navbar */}
 
-                <div className="flex-1 h-auto w-full flex justify-center mb-8 lg:mb-0">
-                    <InteractiveImage
-                        source={logo}
-                        alt="logo"
-                        className={"transition-transform duration-100 ease-out"}
-                    />
-                </div>
-            </section>
+            <main>
+                {/* Hero Section */}
+                <section className="relative min-h-screen flex items-center bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900">
+                    {/* Starry Background */}
+                    <div className="absolute inset-0 overflow-hidden">
+                        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==')]"></div>
+                    </div>
 
-            <section className="container bg-gray-100 py-8  mx-auto px-4 text-center h-auto md:h-64 w-screen">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Results that matter</h2>
+                    {/* Hero Container */}
+                    <div className="container mx-auto px-32 py-32 relative z-10">
+                        <div className="grid md:grid-cols-2 gap-8 items-center text-left">
+                            <div>
+                                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                    WELCOME TO E&#8209;CELL MIT
+                                </h1>
 
-                <div className="flex flex-col md:flex-row items-center justify-evenly space-y-4 md:space-y-0">
-                    {stats.map((stat, index) => (
-                        <StatCard key={index} number={stat.number} label={stat.label} />
-                    ))}
-                </div>
-            </section>
+                                <p className="text-xl text-gray-300 mb-8">
+                                    Fostering innovation and entrepreneurship in the student community. Join us to explore opportunities and experience the world of startups. A brief description about the opportunities and what they will get to experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.
+                                </p>
+
+                                <Link
+                                    to=""
+                                    target="_blank"
+                                    className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full transition-colors">
+                                    Know More
+                                </Link>
+                            </div>
+
+                            {/* Hero 3d effect Image */}
+                            <div className="relative aspect-square w-full max-w-md mx-auto">
+                                <InteractiveImage
+                                    source={logo}
+                                    alt="E-Cell MIT Manipal Logo"
+                                    className="w-full h-full object-contain rounded-3xl"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Statistics Section */}
+                <section className="py-24 bg-gray-900">
+                    <div className="container mx-auto px-4 max-w-5xl">
+                        <h2 className="text-3xl font-bold mb-12 text-center">Results that matter</h2>
+
+                        <div className="grid md:grid-cols-3 gap-8 text-center">
+                            {stats.map((stat, index) => (
+                                <StatCard key={index} number={stat.number} label={stat.label} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </main>
+            {/* // Footer */}
         </div>
     );
 }
