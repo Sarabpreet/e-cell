@@ -138,6 +138,16 @@ const HomePage = () => {
                     </div>
                 </section>
 
+                {/* Animated Marquee Section - TODO */}
+                {/* <section className="py-16 bg-purple-900 bg-opacity-20 overflow-hidden">
+                    <div className="whitespace-nowrap animate-marquee">
+                        <span className="text-4xl font-bold mx-4">E-Cell MIT Manipal</span>
+                        <span className="text-4xl font-bold mx-4">Innovate • Create • Lead</span>
+                        <span className="text-4xl font-bold mx-4">E-Cell MIT Manipal</span>
+                        <span className="text-4xl font-bold mx-4">Innovate • Create • Lead</span>
+                    </div>
+                </section> */}
+
                 {/* To Top Button */}
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
