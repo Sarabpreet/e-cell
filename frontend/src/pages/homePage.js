@@ -89,15 +89,6 @@ const HomePage = () => {
                                     Know More
                                 </Link>
                             </div>
-
-                            {/* Hero 3d effect Image */}
-                            <div className="relative aspect-square w-full max-w-md mx-auto">
-                                <InteractiveImage
-                                    source={logo}
-                                    alt="E-Cell MIT Manipal Logo"
-                                    className="w-full h-full object-contain rounded-3xl"
-                                />
-                            </div>
                         </div>
                     </div>
                 </section>
