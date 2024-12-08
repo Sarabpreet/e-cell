@@ -49,20 +49,29 @@ const HomePage = () => {
 
 
     return (
-        <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
+        <div className="min-h-screen bg-blue-dark text-white overflow-hidden">
             {/* // Navbar */}
 
             <main>
                 {/* Hero Section */}
-                <section className="relative min-h-screen flex items-center bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900">
+                <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light">
                     {/* Starry Background */}
                     <div className="absolute inset-0 overflow-hidden">
                         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==')]" style={parallaxStyle}></div>
                     </div>
 
                     {/* Hero Container */}
-                    <div className="container mx-auto px-32 py-32 relative z-10">
-                        <div className="grid md:grid-cols-2 gap-8 items-center text-left">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 relative z-10">
+                        <div className="grid md:grid-cols-2 gap-8 items-center text-center">
+                            {/* Hero 3d effect Image */}
+                            <div className="relative aspect-square w-full max-w-md mx-auto">
+                                <InteractiveImage
+                                    source={logo}
+                                    alt="E-Cell MIT Manipal Logo"
+                                    className="w-full h-full object-contain rounded-3xl"
+                                />
+                            </div>
+
                             <div>
                                 <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                                     WELCOME TO E&#8209;CELL MIT
@@ -75,7 +84,8 @@ const HomePage = () => {
                                 <Link
                                     to=""
                                     target="_blank"
-                                    className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full transition-colors">
+                                    className="bg-blue-dark hover:bg-blue-mid text-white px-8 py-4 text-lg rounded-full transition-colors
+                                    duration-200 ease-out">
                                     Know More
                                 </Link>
                             </div>
@@ -93,7 +103,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Statistics Section */}
-                <section className="py-24 bg-gray-900">
+                <section className="py-24 bg-blue-dark">
                     <div className="container mx-auto px-4 max-w-5xl">
                         <h2 className="text-3xl font-bold mb-12 text-center">Results that matter</h2>
 
@@ -106,8 +116,8 @@ const HomePage = () => {
                 </section>
 
                 {/* Initiatives Section */}
-                <section className="py-32 bg-gray-900 border-t border-gray-600">
-                    <div className="container mx-auto px-32">
+                <section className="py-32 bg-blue-dark border-t border-blue-mid/30">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-4xl font-bold mb-12 text-center">OUR INITIATIVES</h2>
 
                         <div className="grid md:grid-cols-3 gap-8">
@@ -119,7 +129,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Blogs Section */}
-                <section className="py-16 bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900">
+                <section className="py-16 bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light">
                     <div className="container mx-auto px-4">
                         <div className="flex flex-col md:flex-row items-center justify-around">
                             <div className="mb-8 md:mb-0 md:mr-8 text-center md:text-left">
@@ -130,7 +140,7 @@ const HomePage = () => {
                             </div>
                             <Link
                                 to=""
-                                className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition-colors"
+                                className="inline-block bg-blue-dark hover:bg-blue-mid text-white font-bold py-3 px-6 rounded-full transition-colors"
                             >
                                 Explore Blogs
                             </Link>
@@ -151,7 +161,7 @@ const HomePage = () => {
                 {/* To Top Button */}
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className="fixed bottom-8 right-8 z-50 bg-purple-600 hover:bg-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors"
+                    className="fixed bottom-8 right-8 z-50 bg-blue-mid hover:bg-blue-light text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors"
                     aria-label="Scroll to top"
                 >
                     <svg className="w-6 h-6 transform rotate-180" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
