@@ -2,13 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 const InteractiveImage = ({ source, alt, className }) => {
     const [transform, setTransform] = useState("translateZ(0)");
-    const [isTouchDevice, setIsTouchDevice] = useState(false);
-
-    // Detect if the device is touch-enabled using navigator
-    useEffect(() => {
-        // Checks for touch support
-        setIsTouchDevice((navigator.maxTouchPoints !== 0));
-    }, [])
 
     const handleMouseMove = (e) => {
         const { offsetWidth, offsetHeight } = e.currentTarget;
@@ -28,10 +21,7 @@ const InteractiveImage = ({ source, alt, className }) => {
         className={className}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={{
-            transform: transform,
-            animation: isTouchDevice ? 'float 3s ease-in-out infinite' : 'none'
-        }}
+        style={{ transform: transform }}
     />);
 }
 
