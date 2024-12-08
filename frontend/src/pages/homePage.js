@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from "../placeholder.svg";
 
 import StatCard from '../components/statCardHome';
-import InitiativeCard from '../components/initiativeCardHome';
+// import InitiativeCard from '../components/initiativeCardHome';
 import InteractiveImage from '../components/interactiveImgHome';
 
 const HomePage = () => {
@@ -26,7 +26,7 @@ const HomePage = () => {
         { icon: null, number: '20+', label: 'Mentors' },
     ];
 
-    const initiatives = [
+    /*const initiatives = [
         {
             heading: "STARTUP SCOOP",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
@@ -45,7 +45,7 @@ const HomePage = () => {
             isEnabled: true,
             link: "#",
         },
-    ];
+    ];*/
 
 
     return (
@@ -107,7 +107,7 @@ const HomePage = () => {
                 </section>
 
                 {/* Initiatives Section */}
-                <section className="py-32 bg-blue-dark border-t border-blue-mid/30">
+                {/*<section className="py-32 bg-blue-dark border-t border-blue-mid/30">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-4xl font-bold mb-12 text-center">OUR INITIATIVES</h2>
 
@@ -117,7 +117,7 @@ const HomePage = () => {
                             ))}
                         </div>
                     </div>
-                </section>
+                </section>*/}
 
                 {/* Blogs Section */}
                 <section className="py-16 bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light">
