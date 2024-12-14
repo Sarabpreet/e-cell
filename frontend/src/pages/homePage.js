@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
 
 import StatCard from '../components/statCardHome';
@@ -50,7 +51,7 @@ const HomePage = () => {
 
     return (
         <div className="min-h-screen bg-blue-dark text-white overflow-hidden">
-            {/* // Navbar */}
+            <Navbar/>
 
             <main>
                 {/* Hero Section */}
@@ -161,7 +162,7 @@ const HomePage = () => {
                 </button>
             </main>
 
-            {/* // Footer */}
+          <Footer/>
         </div>
     );
 }
