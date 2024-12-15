@@ -81,7 +81,7 @@ const HomePage = () => {
                                 </p>
 
                                 <Link
-                                    to=""
+                                    to="/aboutus"
                                     target="_blank"
                                     className="bg-blue-dark hover:bg-blue-mid text-white px-8 py-4 text-lg rounded-full transition-colors
                                     duration-200 ease-out">
