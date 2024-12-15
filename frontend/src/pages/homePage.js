@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
+import { initiatives, stats } from "../assets/homeData";
 
 import StatCard from '../components/statCardHome';
 // import InitiativeCard from '../components/initiativeCardHome';
@@ -19,34 +20,6 @@ const HomePage = () => {
     }, []);
 
     const parallaxStyle = { transform: `translateY(${scrollY * 0.5}px)` };
-
-    // Data Handling
-    const stats = [
-        { icon: null, number: '500+', label: 'Students' },
-        { icon: null, number: '30+', label: 'Startups' },
-        { icon: null, number: '20+', label: 'Mentors' },
-    ];
-
-    /*const initiatives = [
-        {
-            heading: "STARTUP SCOOP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: true,
-            link: "#",
-        },
-        {
-            heading: "SSP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: false,
-            // link: "#",
-        },
-        {
-            heading: "MES",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: true,
-            link: "#",
-        },
-    ];*/
 
 
     return (
