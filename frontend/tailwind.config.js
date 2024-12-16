@@ -10,9 +10,11 @@ module.exports = {
         "blue-mid": "#106B88",
         "blue-light": "#64CDC6",
         "blue-pale": "#DAFEFA"
-      }
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // Add Montserrat font family here
+      },
     },
   },
   plugins: [],
 }
-

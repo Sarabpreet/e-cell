@@ -1,80 +1,139 @@
 import React, { useState } from "react";
-//import "./MTstyles.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import aubg from "./aubg.jpeg";
+// Placeholder Images for the Carousel
+const images = [
+  "https://via.placeholder.com/600x400?text=E-Cell+Event+1",
+  "https://via.placeholder.com/600x400?text=E-Cell+Event+2",
+  "https://via.placeholder.com/600x400?text=E-Cell+Event+3",
+];
 
-export default function MTApp() {
-  const images = [
-    "https://preview.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1080&crop=smart&auto=webp&s=28c3ad73cff636f7ba478a0c19d734cd538949d4",
-    "https://randomwordgenerator.com/img/picture-generator/52e4d1424f5aa914f1dc8460962e33791c3ad6e04e5074417d2e72d2954ac5_640.jpg",
-    "https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg",
-    "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
-    "https://shelf.io/wp-content/uploads/2024/06/random-forests-in-ml-for-advanced-decision-making-1.png",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUU-J_RPP78bk5BRbCTgvx8Vu8kMPDzpNSA&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS40KFwbGyAQwLnMAd1-u_JN69dfHRdqc_OiA&s",
-  ];
+const MTApp = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const carouselRef = React.useRef(null);
-
-  const moveSlide = (direction) => {
-    const scrollAmount = 175; // Width of each image
-    if (carouselRef.current) {
-      const currentScroll = carouselRef.current.scrollLeft;
-      carouselRef.current.scrollTo({
-        left: currentScroll + direction * scrollAmount,
-        behavior: "smooth", // Add smooth scrolling
-      });
-    }
+  // Carousel settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    beforeChange: (current, next) => setCurrentSlide(next),
   };
 
   return (
-    <div>
-      <div className="header"></div>
-      <div className="App">
-        <h2 className="head">Title And Description</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor numquam
-          provident enim omnis voluptate delectus voluptatum, dolorem vel ad
-          doloremque quisquam dolorum quidem consectetur in vitae dolore, rerum
-          aspernatur. Iure soluta, qui repellendus cum tempore dolorum
-          distinctio explicabo, pariatur eos, ratione commodi. Atque, pariatur
-          cumque?
-        </p>
-      </div>
-      <div className="all-images" ref={carouselRef}>
-        {images.map((image, index) => (
-          <div key={index} className="slide">
-            <img src={image} alt={`Slide ${index + 1}`} />
+    <div className="bg-gray-50 min-h-screen">
+      {/* Intro and Carousel Section */}
+      <section className="py-16 bg-white text-gray-800 bg-cover"
+      style={{ backgroundImage: `url(${aubg})` }}>
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Carousel on the Left */}
+            <div className="w-full lg:w-1/2">
+              <Slider {...sliderSettings} className="rounded-lg overflow-hidden shadow-lg">
+                {images.map((image, index) => (
+                  <div key={index}>
+                    <img
+                      src={image}
+                      alt={`Event ${index + 1}`}
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                ))}
+              </Slider>
+
+              {/* Thumbnails below the Carousel */}
+              <div className="flex justify-center gap-4 mt-4">
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`w-24 h-16 border-2 rounded cursor-pointer ${
+                      currentSlide === index ? "border-blue-500" : "border-gray-300"
+                    }`}
+                    onClick={() => setCurrentSlide(index)}
+                  >
+                    <img
+                      src={image}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Introduction Content on the Right */}
+      
+<div className="w-full lg:w-1/2 relative opacity-70">
+  {/* Overlay to lighten the background */}
+  <div className="absolute inset-0 bg-black opacity-70"></div> {/* Semi-transparent black overlay */}
+  
+  {/* Content goes here */}
+  <div className="relative z-10 text-white p-6">
+    <h2 className="text-4xl font-bold mb-6">About E-Cell MIT Manipal</h2>
+    <p className="text-lg leading-relaxed mb-4">
+      E-Cell MIT Manipal is a student-led organization that fosters entrepreneurial
+      thinking, encourages innovation, and supports startups. We aim to create an
+      ecosystem where ideas can thrive and leaders are born.
+    </p>
+    <p className="text-lg leading-relaxed mb-4">
+      Through a combination of workshops, events, and mentorship programs, we provide
+      the tools and resources needed to turn ideas into successful ventures.
+    </p>
+    <p className="text-lg leading-relaxed">
+      Join us on this journey to innovation and leadership. Together, let's build
+      something extraordinary!
+    </p>
+  </div>
+</div>
+
           </div>
-        ))}
-      </div>
-
-      <button className="prev" onClick={() => moveSlide(-1)}>
-        &#10094;
-      </button>
-      <button className="next" onClick={() => moveSlide(1)}>
-        &#10095;
-      </button>
-
-      <div className="boxes">
-        <div className="box1">
-          <h2 className="vision">VISION</h2>
-          <p className="text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            ullam maxime, quaerat libero earum, error vero magni consequatur est
-            saepe veritatis nulla alias architecto, laboriosam soluta enim quasi
-            laborum delectus.
-          </p>
         </div>
-        <div className="box2">
-          <h2 className="vision">ACTIVITIES</h2>
-          <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-            minus est non architecto accusamus magni repudiandae velit illum vel
-            qui consequatur fugiat animi placeat quos sapiente quidem dolor
-            recusandae, nisi, ducimus modi delectus beatae.
-          </p>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="py-16 bg-gray-100 text-black-700 "
+      
+
+      >
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-8">Our Vision & Mission</h2>
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Vision */}
+            <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">Our Vision</h3>
+              <p className="text-lg leading-relaxed">
+              To empower entrepreneurs by providing them with a vibrant start-up ecosystem and developing ideas into successful ventures through dedicated mentorship.
+
+              </p>
+            </div>
+            {/* Mission */}
+            <div className="flex-1 bg-white p-8 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
+              <p className="text-lg leading-relaxed">
+              To inculcate the spirit of entrepreneurship within the student community through greater awareness and act as a one-stop destination for all students looking to convert their ideas into viable start-ups.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="footer"></div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto text-center px-6">
+          <h2 className="text-4xl font-bold mb-4">Join Our Journey</h2>
+          <p className="text-lg max-w-2xl mx-auto mb-8 text-center">
+          </p>
+        
+        </div>
+      </section>
     </div>
   );
-}
+};
+
+export default MTApp;
