@@ -1,90 +1,76 @@
-import React from 'react'
-import './Footer.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faYoutube,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 const Footer = () => {
   return (
-    <div className="footer">
-            <div className="sb__footer section__padding"> 
-            <div className="sb__footer-links">
-                <div className="sb__footer-links_div">
-                    <h4>For Business</h4>
-                    <a href="/employer">
-                        <p>Employer</p>
-                    </a>
-                    <a href="/healthplan">
-                        <p>Health Plan</p>
-                    </a>
-                    <a href="/individual">
-                        <p>Individual</p>
-                    </a>
-                </div>
-                <div className="sb__footer-links_div">
-                    <h4>For Resources</h4>
-                    <a href="/resource">
-                        <p>Resource Center</p>
-                    </a>
-                    <a href="/resource">
-                        <p>Testimonials</p>
-                    </a>
-                    <a href="/resource">
-                        <p>STV</p>
-                    </a>
-                </div>
-                <div className="sb__footer-links_div">
-                    <h4>For Partners</h4>
-                    <a href="/employer">
-                        <p>Swing Tech</p>
-                    </a>
-                </div>
-                <div className="sb__footer-links_div">
-                    <h4>Company</h4>
-                    <a href="/about">
-                        <p>About</p>
-                    </a>
-                    <a href="/press">
-                        <p>Press</p>
-                    </a>
-                    <a href="/career">
-                        <p>Career</p>
-                    </a>
-                    <a href="/contact">
-                        <p>Contact</p>
-                    </a>
-                </div>
-                <div className="sb__footer-links_div">
-              <h4>Connect</h4>
-              <div className="social-links">
-                <a href="https://www.instagram.com/ecell.mit/" rel="noreferrer" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="https://www.linkedin.com/company/ecellmit" rel="noreferrer" target="_blank">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                <a href="https://www.youtube.com/@e-cellmit" rel="noreferrer" target="_blank">
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-                <a href="https://x.com/ecellmit/" rel="noreferrer" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                {/*
-                <a href="https://www.facebook.com/projectmanas" rel="noreferrer" target="_blank">
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </a>*/}
-              </div>
-            </div>
+    <div className="bg-blue-dark text-blue-light py-12">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Know More Section */}
+          <div>
+            <h4 className="font-bold text-lg mb-4">Know More</h4>
+            <ul className="space-y-2">
+              <li><a href="/Aboutus" className="text-blue-pale hover:text-blue-mid">About Us</a></li>
+              <li><a href="/speakers" className="text-blue-pale hover:text-blue-mid">Speakers</a></li>
+              <li><a href="/events" className="text-blue-pale hover:text-blue-mid">Events</a></li>
+              <li><a href="/contactus" className="text-blue-pale hover:text-blue-mid">Contact Us</a></li>
+            </ul>
+          </div>
 
-            </div>
-        <hr></hr>
+          {/* Contact Us Section */}
+          <div>
+            <h4 className="font-bold text-lg mb-4">Contact Us</h4>
+            <ul className="space-y-2">
+              <li><p>Anshutosh Swain (Chairperson): <span className="text-blue-pale">+91-89962977444</span></p></li>
+              <li><p>Shaurya Mittal (HRM): <span className="text-blue-pale">+91-8890461763</span></p></li>
+              <li><p>Sucheta Kolekar (Faculty Advisor): <span className="text-blue-pale">+91-8240606650</span></p></li>
+            </ul>
+          </div>
 
+          {/* Location Section with Google Maps Image */}
+          <div>
+            <h4 className="font-bold text-lg mb-4">Location</h4>
+            <div className="mb-4">
+              <img
+                src="https://www.google.com/maps/search/e+cell+mit+manipal/@13.3515236,74.7904158,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                alt="E-Cell MIT Location"
+                className="w-full h-auto"
+              />
             </div>
+            <p className="text-blue-pale">E-Cell MIT Manipal, Manipal, India</p>
+          </div>
         </div>
-  )
-}
 
-export default Footer
+        {/* Divider Line */}
+        <hr className="my-6 border-blue-mid" />
+
+        {/* Social Media Section */}
+        <div className="text-center">
+          <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
+          <div className="flex justify-center space-x-6">
+            <a href="https://www.instagram.com/ecell.mit/" target="_blank" rel="noreferrer" className="text-blue-pale hover:text-blue-mid">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/company/ecellmit" target="_blank" rel="noreferrer" className="text-blue-pale hover:text-blue-mid">
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+            </a>
+            <a href="https://www.youtube.com/@e-cellmit" target="_blank" rel="noreferrer" className="text-blue-pale hover:text-blue-mid">
+              <FontAwesomeIcon icon={faYoutube} size="2x" />
+            </a>
+            <a href="https://x.com/ecellmit/" target="_blank" rel="noreferrer" className="text-blue-pale hover:text-blue-mid">
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="text-center text-sm text-blue-light mt-8">
+          <p>&copy; 2024 E-Cell MIT Manipal. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

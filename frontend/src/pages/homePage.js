@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
+import bg from "./bg.jpeg";
+import { Typewriter } from "react-simple-typewriter";
+
 import { initiatives, stats } from "../assets/homeData";
 
 import StatCard from '../components/statCardHome';
@@ -48,15 +51,18 @@ const HomePage = () => {
     }, [])
 
     return (
-        <div className="min-h-screen bg-blue-dark text-white overflow-hidden">
+        <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
             <Navbar/>
 
             <main>
                 {/* Hero Section */}
-                <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light">
+                <section
+  className="relative min-h-screen flex items-center bg-cover bg-center"
+  style={{ backgroundImage: `url(${bg})` }}
+>
                     {/* Starry Background */}
                     <div className="absolute inset-0 overflow-hidden">
-                        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==')]" style={parallaxStyle}></div>
+                        <div className="absolute inset-0 bg-[url('')]" style={parallaxStyle}></div>
                     </div>
 
                     {/* Hero Container */}
@@ -72,13 +78,24 @@ const HomePage = () => {
                             </div>
 
                             <div>
-                                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                    WELCOME TO E&#8209;CELL MIT
-                                </h1>
+                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <span>
+          <Typewriter
+            words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
+            loop={true} // Set to true for infinite looping
+            cursor
+            cursorStyle="|"
+            typeSpeed={200}
+            deleteSpeed={200}
+            delaySpeed={1000}
+          />
+        </span>
+      </h1>
 
-                                <p className="text-xl text-gray-300 mb-8">
-                                    Fostering innovation and entrepreneurship in the student community. Join us to explore opportunities and experience the world of startups. A brief description about the opportunities and what they will get to experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.
-                                </p>
+                                <p className="text-xl text-gray-300 mb-8 font-montserrat">
+                                E-Cell MIT Manipal is the heart of innovation and entrepreneurship at MIT, Manipal. We are a student-driven platform dedicated to fostering creativity, encouraging entrepreneurial thinking, and supporting aspiring startups.
+
+Through a dynamic mix of workshops, events, and mentorship programs, E-Cell empowers students to transform their ideas into impactful ventures. Our goal is to provide the resources, guidance, and community needed for students to thrive in the world of entrepreneurship.  </p>
 
                                 <Link
                                     to="/aboutus"

@@ -5,6 +5,8 @@ import HomePage from './pages/homePage';
 import MeetTheTeam from './pages/Meettheteam';
 import AboutUs from './pages/AboutUs';
 import Initiatives from "./pages/Initiatives";
+import Mes from './pages/mes';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
           <Route path="/MeetTheTeam" element={<MeetTheTeam />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
           <Route path="/Initiatives" element={<Initiatives />}></Route>
+          <Route path="/mes" element={<Mes />}></Route>
         </Routes>
       </Router>
     </div>
