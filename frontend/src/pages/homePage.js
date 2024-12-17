@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
+import { initiatives, stats } from "../assets/homeData";
 
 import StatCard from '../components/statCardHome';
-// import InitiativeCard from '../components/initiativeCardHome';
+import InitiativeCard from '../components/initiativeCardHome';
 import InteractiveImage from '../components/interactiveImgHome';
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
     // Parallax Handling
@@ -20,34 +26,26 @@ const HomePage = () => {
 
     const parallaxStyle = { transform: `translateY(${scrollY * 0.5}px)` };
 
-    // Data Handling
-    const stats = [
-        { icon: null, number: '500+', label: 'Students' },
-        { icon: null, number: '30+', label: 'Startups' },
-        { icon: null, number: '20+', label: 'Mentors' },
-    ];
+    const initiativeRef = useRef(null);
+    const containerRef = useRef(null);
 
-    /*const initiatives = [
-        {
-            heading: "STARTUP SCOOP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: true,
-            link: "#",
-        },
-        {
-            heading: "SSP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: false,
-            // link: "#",
-        },
-        {
-            heading: "MES",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus nulla, condimentum in iaculis porta.",
-            isEnabled: true,
-            link: "#",
-        },
-    ];*/
+    useLayoutEffect(() => {
+        let context = gsap.context(() => {
+            const sections = gsap.utils.toArray('.initiative-card');
+            gsap.to(sections, {
+                xPercent: -100 * (sections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: initiativeRef.current,
+                    pin: true,
+                    scrub: 1,
+                    end: () => "+=" + initiativeRef.current.offsetWidth
+                }
+            });
+        }, containerRef);
 
+        return () => context.revert();
+    }, [])
 
     return (
         <div className="min-h-screen bg-blue-dark text-white overflow-hidden">
@@ -83,7 +81,7 @@ const HomePage = () => {
                                 </p>
 
                                 <Link
-                                    to=""
+                                    to="/aboutus"
                                     target="_blank"
                                     className="bg-blue-dark hover:bg-blue-mid text-white px-8 py-4 text-lg rounded-full transition-colors
                                     duration-200 ease-out">
@@ -108,17 +106,19 @@ const HomePage = () => {
                 </section>
 
                 {/* Initiatives Section */}
-                {/*<section className="py-32 bg-blue-dark border-t border-blue-mid/30">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <section ref={initiativeRef} className="py-32 bg-blue-dark border-t border-blue-mid/30 overflow-hidden">
+                    <div className="container mx-auto px-8 sm:px-10 lg:px-12">
                         <h2 className="text-4xl font-bold mb-12 text-center">OUR INITIATIVES</h2>
 
-                        <div className="grid md:grid-cols-3 gap-8">
+                        <div ref={containerRef} className="flex overflow-x-hidden space-x-0">
                             {initiatives.map((initiative, index) => (
-                                <InitiativeCard key={index} heading={initiative.heading} description={initiative.description} isEnabled={initiative.isEnabled} link={initiative.link} />
+                                <div key={index} className="initiative-card flex-shrink-0 w-full px-4">
+                                    <InitiativeCard heading={initiative.heading} description={initiative.description} isEnabled={initiative.isEnabled} link={initiative.link} />
+                                </div>
                             ))}
                         </div>
                     </div>
-                </section>*/}
+                </section>
 
                 {/* Blogs Section */}
                 <section className="py-16 bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light">
