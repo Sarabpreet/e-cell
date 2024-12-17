@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './pages/homePage';
 import MeetTheTeam from './pages/Meettheteam';
 import AboutUs from './pages/AboutUs';
-import mes from './pages/mes';
+import Initiatives from "./pages/Initiatives";
+import Mes from './pages/mes';
+
 function App() {
   return (
     <div className="App">
@@ -13,8 +15,8 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/MeetTheTeam" element={<MeetTheTeam />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
-          <Route path="/mes" element={<mes />}></Route>
-          
+          <Route path="/Initiatives" element={<Initiatives />}></Route>
+          <Route path="/mes" element={<Mes />}></Route>
         </Routes>
       </Router>
     </div>
