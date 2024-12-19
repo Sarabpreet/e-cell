@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
-import bg from "./bg.jpeg";
+import bg from "./bg.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 import { initiatives, stats } from "../assets/homeData";
@@ -58,7 +58,11 @@ const HomePage = () => {
                 {/* Hero Section */}
                 <section
   className="relative min-h-screen flex items-center bg-cover bg-center"
-  style={{ backgroundImage: `url(${bg})` }}
+  style={{
+    backgroundImage: `url(${bg})`,
+    width: 'auto',
+    height: 'auto',
+  }}
 >
                     {/* Starry Background */}
                     <div className="absolute inset-0 overflow-hidden">
@@ -93,10 +97,7 @@ const HomePage = () => {
       </h1>
 
                                 <p className="text-xl text-gray-300 mb-8 font-montserrat">
-                                E-Cell MIT Manipal is the heart of innovation and entrepreneurship at MIT, Manipal. We are a student-driven platform dedicated to fostering creativity, encouraging entrepreneurial thinking, and supporting aspiring startups.
-
-Through a dynamic mix of workshops, events, and mentorship programs, E-Cell empowers students to transform their ideas into impactful ventures. Our goal is to provide the resources, guidance, and community needed for students to thrive in the world of entrepreneurship.  </p>
-
+                                </p>
                                 <Link
                                     to="/aboutus"
                                     target="_blank"

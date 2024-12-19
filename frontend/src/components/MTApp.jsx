@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import aubg from "./aubg.jpeg";
+import aubg from "./aubg.jpg";
 // Placeholder Images for the Carousel
 const images = [
   "https://via.placeholder.com/600x400?text=E-Cell+Event+1",
@@ -29,7 +29,7 @@ const MTApp = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Intro and Carousel Section */}
-      <section className="py-16 bg-white text-gray-800 bg-cover"
+      <section className="py-16 bg-white text-black-800 bg-cover"
       style={{ backgroundImage: `url(${aubg})` }}>
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -71,21 +71,21 @@ const MTApp = () => {
       
 <div className="w-full lg:w-1/2 relative opacity-70">
   {/* Overlay to lighten the background */}
-  <div className="absolute inset-0 bg-black opacity-70"></div> {/* Semi-transparent black overlay */}
+  <div className="absolute inset-0 bg-white opacity-170"></div> {/* Semi-transparent black overlay */}
   
   {/* Content goes here */}
-  <div className="relative z-10 text-white p-6">
+  <div className="relative font-style:mon z-10 text-black p-6">
     <h2 className="text-4xl font-bold mb-6">About E-Cell MIT Manipal</h2>
-    <p className="text-lg leading-relaxed mb-4">
+    <p className=" leading-relaxed text-sm mb-4 font-bold whitespace-pre-line">
       E-Cell MIT Manipal is a student-led organization that fosters entrepreneurial
       thinking, encourages innovation, and supports startups. We aim to create an
       ecosystem where ideas can thrive and leaders are born.
     </p>
-    <p className="text-lg leading-relaxed mb-4">
+    <p className=" leading-relaxed text-sm mb-4 font-bold whitespace-pre-line">
       Through a combination of workshops, events, and mentorship programs, we provide
       the tools and resources needed to turn ideas into successful ventures.
     </p>
-    <p className="text-lg leading-relaxed">
+    <p className=" leading-relaxed text-sm mb-4 font-bold whitespace-pre-line">
       Join us on this journey to innovation and leadership. Together, let's build
       something extraordinary!
     </p>

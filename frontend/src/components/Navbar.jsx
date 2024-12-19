@@ -23,7 +23,7 @@ const Navbar = () => {
       <ul className={isMenuOpen ? 'active' : ''}>
       <a href="/"><li>Home</li></a>
       <a href="/Initiatives"><li>Initiatives</li></a>
-      <a href="/Blogs"><li>Blogs</li></a>
+      <a href="/blog"><li>Blogs</li></a>
       <a href="/AboutUs"><li>About Us</li></a>
       <a href="/TheTeam"><li>The Team</li></a>
       <a href="/mes"><li>MES</li></a>
