@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Know More Section */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Know More</h4>
+            <h4 className=" text-lg mb-4">Know More</h4>
             <ul className="space-y-2">
               <li><a href="/Aboutus" className="text-blue-pale hover:text-blue-mid">About Us</a></li>
               <li><a href="/speakers" className="text-blue-pale hover:text-blue-mid">Speakers</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2">
-              <li><p>Anshutosh Swain (Chairperson): <span className="text-blue-pale">+91-89962977444</span></p></li>
+              <li><p>Ashutosh Swain (Chairperson): <span className="text-blue-pale">+91-89962977444</span></p></li>
               <li><p>Shaurya Mittal (HRM): <span className="text-blue-pale">+91-8890461763</span></p></li>
               <li><p>Sucheta Kolekar (Faculty Advisor): <span className="text-blue-pale">+91-8240606650</span></p></li>
             </ul>
