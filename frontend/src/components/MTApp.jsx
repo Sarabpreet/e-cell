@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import aubg from "./aubg.jpg";
 // Placeholder Images for the Carousel
 const images = [
-  "https://via.placeholder.com/600x400?text=E-Cell+Event+1",
-  "https://via.placeholder.com/600x400?text=E-Cell+Event+2",
-  "https://via.placeholder.com/600x400?text=E-Cell+Event+3",
+  "https://i.ibb.co/X8hgmRT/jm.png",
+  "https://i.ibb.co/D856dB7/img.png",
+  "https://i.ibb.co/grytw84/bn.png",
 ];
 
 const MTApp = () => {
