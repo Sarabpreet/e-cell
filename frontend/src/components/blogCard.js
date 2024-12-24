@@ -3,7 +3,8 @@ import React from "react";
 export const BlogCard = ({ imageLink, title, postURL }) => {
     return (
         <a href={postURL} target="_blank" rel="noopener noreferrer" className="group block">
-            <div className="bg-blue-dark rounded-lg overflow-hidden shadow-lg transition-all will-change-transform duration-300 transform group-hover:scale-105 group-hover:-translate-y-1 group-hover:shadow-2xl group-hover:shadow-blue-pale/25">
+         <div className="bg-blue-dark rounded-lg overflow-hidden shadow-lg transition-all will-change-transform duration-300 transform group-hover:scale-105 group-hover:-translate-y-1 group-hover:shadow-2xl hover:shadow-white hover:border-4 hover:border-white">
+
                 <img src={imageLink} alt={title} width={400} height={200} className="w-full h-48 object-cover" />
 
                 <div className="p-6">
