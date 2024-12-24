@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
 import bg from "./bg.jpg";
+import bgg from "./bgg.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 import { initiatives, stats } from "../assets/homeData";
@@ -51,7 +52,7 @@ const HomePage = () => {
     }, [])
 
     return (
-        <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
+        <div className="min-h-screen bg-img src={bgg} text-white overflow-hidden">
             <Navbar/>
 
             <main>
