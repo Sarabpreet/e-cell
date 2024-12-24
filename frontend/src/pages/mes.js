@@ -1,3 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./homePage";
+import MeetTheTeam from "./Meettheteam";
+import AboutUs from "./AboutUs";
 import Initiatives from "./Initiatives";
 
 function mes() {

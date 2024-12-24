@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -19,16 +19,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
-    // Parallax Handling
-    const [scrollY, setScrollY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => setScrollY(window.scrollY)
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, []);
-
-    const parallaxStyle = { transform: `translateY(${scrollY * 0.5}px)` };
 
     const initiativeRef = useRef(null);
     const containerRef = useRef(null);
@@ -52,23 +42,21 @@ const HomePage = () => {
     }, [])
 
     return (
-        <div className="min-h-screen bg-img src={bgg} text-white overflow-hidden">
-            <Navbar/>
+
+
+        <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
+            <Navbar />
 
             <main>
                 {/* Hero Section */}
                 <section
-  className="relative min-h-screen flex items-center bg-cover bg-center"
-  style={{
-    backgroundImage: `url(${bg})`,
-    width: 'auto',
-    height: 'auto',
-  }}
->
-                    {/* Starry Background */}
-                    <div className="absolute inset-0 overflow-hidden">
-                        <div className="absolute inset-0 bg-[url('')]" style={parallaxStyle}></div>
-                    </div>
+                    className="relative min-h-screen flex items-center bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${bg})`,
+                        width: 'auto',
+                        height: 'auto',
+                    }}
+                >
 
                     {/* Hero Container */}
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 relative z-10">
@@ -83,26 +71,26 @@ const HomePage = () => {
                             </div>
 
                             <div>
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-        <span>
-          <Typewriter
-            words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
-            loop={true} // Set to true for infinite looping
-            cursor
-            cursorStyle="|"
-            typeSpeed={200}
-            deleteSpeed={200}
-            delaySpeed={1000}
-          />
-        </span>
-      </h1>
+                                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                    <span>
+                                        <Typewriter
+                                            words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
+                                            loop={true} // Set to true for infinite looping
+                                            cursor
+                                            cursorStyle="|"
+                                            typeSpeed={200}
+                                            deleteSpeed={200}
+                                            delaySpeed={1000}
+                                        />
+                                    </span>
+                                </h1>
 
                                 <p className="text-xl text-gray-300 mb-8 font-montserrat">
                                 </p>
                                 <Link
                                     to="/aboutus"
                                     target="_blank"
-                                    className="bg-blue-dark hover:bg-blue-mid text-white px-8 py-4 text-lg rounded-full transition-colors
+                                    className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors
                                     duration-200 ease-out">
                                     Know More
                                 </Link>
@@ -159,16 +147,6 @@ const HomePage = () => {
                     </div>
                 </section>
 
-                {/* Animated Marquee Section - TODO */}
-                {/* <section className="py-16 bg-purple-900 bg-opacity-20 overflow-hidden">
-                    <div className="whitespace-nowrap animate-marquee">
-                        <span className="text-4xl font-bold mx-4">E-Cell MIT Manipal</span>
-                        <span className="text-4xl font-bold mx-4">Innovate • Create • Lead</span>
-                        <span className="text-4xl font-bold mx-4">E-Cell MIT Manipal</span>
-                        <span className="text-4xl font-bold mx-4">Innovate • Create • Lead</span>
-                    </div>
-                </section> */}
-
                 {/* To Top Button */}
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -181,7 +159,7 @@ const HomePage = () => {
                 </button>
             </main>
 
-          <Footer/>
+            <Footer />
         </div>
     );
 }

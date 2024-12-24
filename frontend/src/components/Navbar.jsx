@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo_light from '../pages/logo.jpeg';
+import logo_lightt from '../pages/ece-removebg-preview.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,7 +19,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faBars} />
       </button>
 
-      <img src={logo_light} alt="Logo" className='logo' />
+      <img src={logo_lightt} alt="Logo" className='logo' />
       
       <ul className={isMenuOpen ? 'active' : ''}>
       <a href="/"><li>Home</li></a>
@@ -27,7 +28,7 @@ const Navbar = () => {
       <a href="/AboutUs"><li>About Us</li></a>
       <a href="/MeettheTeam"><li>The Team</li></a>
       <a href="/mes"><li>MES</li></a>
-      <a href="/SSP"><li>SSP</li></a>
+      
       </ul>
     </div>
   );

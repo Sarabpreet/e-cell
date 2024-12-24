@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
 const teamMembers = [
   {
     name: "Ashutosh Swain",
@@ -42,7 +43,7 @@ const teamMembers = [
     instagram: " https://www.instagram.com/j.aaryav/?utm_source=ig_web_button_share_sheet",
   },
   {
-    name: "Ayushi wadhwa",
+    name: "Ayushi Wadhwa",
     role: "Technical",
      photo: "https://media.licdn.com/dms/image/v2/D5603AQFlWYUNDSSopg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729778141178?e=1740009600&v=beta&t=IhDrFAy_u8Z490Jun_wBhfO9Gfqk-FZSR1r8L5ASM0U",
     message: "Keep learning keep growing.",
@@ -82,7 +83,7 @@ const teamMembers = [
     instagram: "https://www.instagram.com/shauryamittal_06/?utm_source=ig_web_button_share_sheet",
   },
   {
-    name: "Arnav Samant",
+    name: "Arnav Sawant",
     role: "Social media and graphics design",
     photo: "https://media.licdn.com/dms/image/v2/D5603AQFZejWvVQVHtw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712861458744?e=1740009600&v=beta&t=Ckkqq658nL335rrzzgsod4i3bvDtMmBaEvH68_Bzhvc",
     message: "Those who give up will never know how close they were to success",
@@ -117,7 +118,10 @@ const teamMembers = [
 
 function MeetTheTeam() {
   return (
-    <div className="min-h-screen bg-gray-800 p-10">
+    
+    <div className="min-h-screen bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
+    <Navbar/>
+   
       <h1 className="text-4xl font-bold text-center text-white mb-10 ">
         Meet the Team
       </h1>
@@ -125,7 +129,7 @@ function MeetTheTeam() {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="relative bg-gray-900 rounded-lg border-4 border-gold-400 shadow-2xl overflow-hidden group transform transition duration-500 hover:scale-105 hover:shadow-3xl"
+            className="relative bg-blue-dark rounded-lg border-4 border-gold-400 shadow-2xl overflow-hidden group transform transition duration-500 hover:scale-105 hover:shadow-3xl"
           >
             {/* Photo */}
             <div className="relative overflow-hidden">
@@ -137,7 +141,7 @@ function MeetTheTeam() {
             </div>
 
             {/* Text Content */}
-            <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-gray-900 text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
+            <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
               <h2 className="text-3xl font-semibold text-white tracking-wider">
                 {member.name}
               </h2>
@@ -146,7 +150,7 @@ function MeetTheTeam() {
           </div>
         ))}
       </div>
-      
+   <Footer/>
     </div>
   );
 }

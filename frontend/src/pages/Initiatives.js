@@ -5,12 +5,12 @@ import Footer from '../components/Footer';
 const InitiativeCard = ({ image, title, description }) => {
   return (
     <div
-    className="bg-white rounded-lg shadow-lg overflow-hidden w-80 border-4 border-transparent transform transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 hover:rotate-1 hover:border-blue-mid"
+    className="bg-blue-dark rounded-lg shadow-lg overflow-hidden w-80 border-4 border-transparent transform transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 hover:rotate-1 hover:shadow-white hover:border-white"
   >
       <img src={image} alt={`Image for ${title}`} className="w-full h-48 object-cover" />
-      <div className="p-4 text-center">
+      <div className="p-4 text-center text-white">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4 whitespace-pre-line">{description}</p>
+        <p className="text-white-600 text-sm mb-4 whitespace-pre-line">{description}</p>
       </div>
     </div>
   );
@@ -43,11 +43,11 @@ metrics to ensure market readiness.`,
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col ">
       <Navbar/>
     
 
-      <main className="flex justify-center items-center gap-8 flex-wrap p-8 bg-gray-100 flex-grow">
+      <main className="flex justify-center items-center gap-8 flex-wrap p-8  flex-grow bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
         {initiatives.map((initiative, index) => (
           <InitiativeCard
             key={index}
