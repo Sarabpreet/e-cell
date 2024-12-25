@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import logo from "../placeholder.svg";
 import bg from "./bg.jpg";
-import bgg from "./bgg.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 import { initiatives, stats } from "../assets/homeData";
