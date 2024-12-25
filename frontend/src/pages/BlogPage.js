@@ -2,34 +2,7 @@ import React from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { BlogList } from "../components/blogCard";
-
-const sampleBlogData = [
-  {
-    image: "https://picsum.photos/400/200",
-    title: "Lorem Ipsum Blog Heading",
-    postURL: "https://example.com/"
-  },
-  {
-    image: "https://picsum.photos/400/200",
-    title: "Lorem Ipsum Blog Heading",
-    postURL: "https://example.com/"
-  },
-  {
-    image: "https://picsum.photos/400/200",
-    title: "Lorem Ipsum Blog Heading",
-    postURL: "https://example.com/"
-  },
-  {
-    image: "https://picsum.photos/400/200",
-    title: "Lorem Ipsum Blog Heading",
-    postURL: "https://example.com/"
-  },
-  {
-    image: "https://picsum.photos/400/200",
-    title: "Lorem Ipsum Blog Heading",
-    postURL: "https://example.com/"
-  }
-]
+import { BlogData } from "../assets/blogData";
 
 const BlogPage = () => {
   return (
@@ -43,7 +16,7 @@ const BlogPage = () => {
               <h1 className="text-4xl font-bold text-blue-pale">Latest Startup Scoops</h1>
             </header>
 
-            <BlogList posts={sampleBlogData} />
+            <BlogList posts={BlogData} />
           </div>
         </section>
       </main>
