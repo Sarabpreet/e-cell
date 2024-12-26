@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
+import bg from "./bcl.png";
 const InitiativeCard = ({ image, title, description }) => {
   return (
     <div
@@ -32,7 +32,7 @@ informed. Startups from MAHE are given a spotlight in each edition, with their j
 achievements showcased.`,
     },
     {
-      image: "https://i.ibb.co/Q8BsSs0",
+      image:  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGRoAIsN1gSecF7WTPBw2O__hG63xXaDJ8E1MpktjqQ4k8VLst4EknFmTAKaGpc1oZ4HYz2FSqoQgksvKpwwaMwHgA2KY7iofXUEpVNvFINddGiGZKYF0vVabidYtbwdWguj1cnQuzYIilG9S-fx8gS9yj-_qYQVk2kz2mQPARqKc2zD8cjwHGi8ct/s320/Untitled%20design.png",
       title: "Business Clinic",
       description: `Business Clinic is a structured approach to helping startups refine ideas, validate 
 feasibility, and identify target markets. It emphasizes solving key problems, understanding 
