@@ -64,8 +64,7 @@ const HomePage = () => {
                             {/* Hero 3d effect Image */}
                             <div className="relative aspect-square w-full max-w-md mx-auto">
                                 <InteractiveImage
-                                    source={logo}
-                                    alt="E-Cell MIT Manipal Logo"
+                                    source="https://media.licdn.com/dms/image/v2/C560BAQG2M-zgBYTgCA/company-logo_200_200/company-logo_200_200/0/1630652795200/ecellmit_logo?e=1743033600&v=beta&t=ZfPbKeOXjVeMmakgBjOtKPLhd7YvfCo7rClIeRsbxFg"                                    alt="E-Cell MIT Manipal Logo"
                                     className="w-full h-full object-contain rounded-3xl"
                                 />
                             </div>
