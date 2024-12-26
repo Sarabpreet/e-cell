@@ -36,17 +36,21 @@ const MTApp = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Carousel on the Left */}
             <div className="w-full lg:w-1/2">
-              <Slider {...sliderSettings} className="rounded-lg overflow-hidden shadow-lg">
-                {images.map((image, index) => (
-                  <div key={index}>
-                    <img
-                      src={image}
-                      alt={`Event ${index + 1}`}
-                      className="w-full h-80 object-cover"
-                    />
-                  </div>
-                ))}
-              </Slider>
+            <Slider {...sliderSettings} className="rounded-lg overflow-hidden shadow-lg items-center">
+  {images.map((image, index) => (
+    <div key={index} className="flex justify-center items-center">
+      <img
+        src={image}
+        alt={`Event ${index + 1}`}
+        className="w-[550px] h-[350px] object-contain"
+        loading="lazy"
+      />
+    </div>
+  ))}
+</Slider>
+
+
+
 
               {/* Thumbnails below the Carousel */}
               <div className="flex justify-center gap-4 mt-4">

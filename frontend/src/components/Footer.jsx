@@ -22,9 +22,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2">
-              <li><p>Ashutosh Swain (Chairperson): <span className="text-blue-pale">+91-89962977444</span></p></li>
-              <li><p>Shaurya Mittal (HRM): <span className="text-blue-pale">+91-8890461763</span></p></li>
-              <li><p>Sucheta Kolekar (Faculty Advisor): <span className="text-blue-pale">+91-8240606650</span></p></li>
+              <li><p>Ashutosh Swain<br/> <span className="text-blue-pale">+91-89962977444</span></p></li>
+              <li><p>Mahima Sharma  <br/><span className="text-blue-pale">+91-8890461763</span></p></li>
+              <li><p>Saksham Goel<br/> <span className="text-blue-pale">+91-8240606650</span></p></li>
             </ul>
           </div>
 
@@ -32,11 +32,15 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Location</h4>
             <div className="mb-4">
-              <img
-                src="https://www.google.com/maps/search/e+cell+mit+manipal/@13.3515236,74.7904158,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                alt="E-Cell MIT Location"
-                className="w-full h-auto"
-              />
+            <a
+  href="https://www.google.com/maps/search/e+cell+mit+manipal/@13.3515236,74.7904158,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-500 underline"
+>
+  E-Cell MIT Location
+</a>
+
             </div>
             <p className="text-blue-pale">E-Cell MIT Manipal, Manipal, India</p>
           </div>

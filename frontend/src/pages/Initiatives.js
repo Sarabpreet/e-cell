@@ -24,7 +24,7 @@ const Initiatives = () => {
       description: `The inaugural E10 Entrepreneurship Summit, held on January 16, 2024, brought together the entrepreneurial communities of MAHE colleges. Organized by E-Cell, MIT Manipal, the event tackled challenges like securing sponsorships, boosting student interest, and improving networking. Insightful discussions set the stage for a stronger entrepreneurial ecosystem in Manipal, inspiring future collaborations and innovation.`,
     },
     {
-      image: "https://i.img.ibb.co/Q8BsSs0/l.png",
+      image: "https://media.licdn.com/dms/image/v2/D4D12AQHkJQEjTr3knw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1723120932662?e=1740614400&v=beta&t=2mCjuIp_BiBCk6oIU9qI0U7H_ef_lFq5bHjAQLIwVbM",
       title: "Startup Scoop",
       description: `Startup Scoop is a bi-monthly newsletter where the latest news and updates from the 
 dynamic world of business and entrepreneurship are delivered. Trending topics, and inspiring success stories are highlighted to keep readers 
