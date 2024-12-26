@@ -22,9 +22,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2">
-              <li><p>Ashutosh Swain<br/> <span className="text-blue-pale">+91-89962977444</span></p></li>
-              <li><p>Mahima Sharma  <br/><span className="text-blue-pale">+91-8890461763</span></p></li>
-              <li><p>Saksham Goel<br/> <span className="text-blue-pale">+91-8240606650</span></p></li>
+              <li><p>Ashutosh Swain<br/> <span className="text-blue-pale">+91-88306 91247</span></p></li>
+              <li><p>Mahima Sharma  <br/><span className="text-blue-pale">+91-88519 48246</span></p></li>
+              <li><p>Saksham Goel<br/> <span className="text-blue-pale">+91-99285 48797</span></p></li>
             </ul>
           </div>
 
