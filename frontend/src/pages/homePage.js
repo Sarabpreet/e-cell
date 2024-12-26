@@ -94,34 +94,46 @@ const HomePage = () => {
   />
 </div>
 
+<div className="parent-div h-screen flex flex-col">
+  {/* Content section: Interactive text */}
+  <div className="content-container flex-1 flex justify-start items-center pt-16">
+    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-center">
+      <span>
+        <Typewriter
+          words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
+          loop={true} // Set to true for infinite looping
+          cursor
+          cursorStyle="|"
+          typeSpeed={250}
+          deleteSpeed={80}
+          delaySpeed={1000}
+        />
+      </span>
+    </h1>
+
+    <p className="text-xl text-gray-300 mb-8 font-montserrat text-center">
+      {/* Other content if necessary */}
+    </p>
+  </div>
+
+  {/* Button container: Centered at the bottom */}
+  <div className="button-container flex justify-center items-center pb-6">
+    <Link
+      to="/aboutus"
+      target="_blank"
+      className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors duration-200 ease-out"
+    >
+      Know More
+    </Link>
+  </div>
+</div>
 
 
-                            <div>
-                                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                    <span>
-                                        <Typewriter
-                                            words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
-                                            loop={true} // Set to true for infinite looping
-                                            cursor
-                                            cursorStyle="|"
-                                            typeSpeed={200}
-                                            deleteSpeed={200}
-                                            delaySpeed={1000}
-                                        />
-                                    </span>
-                                </h1>
 
-                                <p className="text-xl text-gray-300 mb-8 font-montserrat">
-                                </p>
-                                <Link
-                                    to="/aboutus"
-                                    target="_blank"
-                                    className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors
-                                    duration-200 ease-out">
-                                    Know More
-                                </Link>
+
+
+                                
                             </div>
-                        </div>
                     </div>
                 </section>
 
