@@ -38,5 +38,45 @@ export const BlogData = [
         image: "https://picsum.photos/400/200",
         title: "Lorem Ipsum Blog Heading",
         postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-9-ecellmit-uddzc"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-8-ecellmit-jqdwf"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-7-ecellmit-hrzzf"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-6-ecellmit-xivlf"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-5-ecellmit-f6c6f"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-4-ecellmit"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-3-ecellmit"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-2-ecellmit"
+    },
+    {
+        image: "https://picsum.photos/400/200",
+        title: "Lorem Ipsum Blog Heading",
+        postURL: "https://www.linkedin.com/pulse/startup-scoop-edition-1-ecellmit"
     }
 ];
