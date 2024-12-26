@@ -6,9 +6,9 @@ import aubg from "./aubg.jpg";
 import { Typewriter } from 'react-simple-typewriter';
 // Placeholder Images for the Carousel
 const images = [
-  "https://i.ibb.co/X8hgmRT/jm.png",
-  "https://i.ibb.co/D856dB7/img.png",
-  "https://i.ibb.co/grytw84/bn.png",
+  "https://media.licdn.com/dms/image/v2/D4D22AQGWW449-7zU2A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709367931390?e=1738195200&v=beta&t=47aPS6_EdCCPnkeC6HzuQdigKQQKaSFhhgsFt-i38xg",
+  "https://media.licdn.com/dms/image/v2/D4D22AQHhQxjqa3qSpA/feedshare-shrink_800/feedshare-shrink_800/0/1703909534332?e=1738195200&v=beta&t=HGh5kCh2Cu0vVuGRJQgoMR0jR-Hpn5qCqBMaI44ZvSw",
+  "https://media.licdn.com/dms/image/v2/D4D22AQEKVdd8oQJIbA/feedshare-shrink_1280/feedshare-shrink_1280/0/1731559661333?e=1738195200&v=beta&t=CAWjX5nyi3PmRaBgfHe1GF6Hq0xjOuZidhZZJV0ZMwg",
 ];
 
 const MTApp = () => {
