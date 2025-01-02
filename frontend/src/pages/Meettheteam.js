@@ -118,13 +118,9 @@ const teamMembers = [
 
 function MeetTheTeam() {
   return (
-    
-    <div className="min-h-screen bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
-    <Navbar/>
-   
-      <h1 className="text-4xl font-bold text-center text-white mb-10 ">
-        Meet the Team
-      </h1>
+    <div className="min-h-screen bg-gradient-to-br from-blue-dark via-blue-mid font-serif to-blue-light p-10">
+      <Navbar />
+      <h1 className="text-4xl font-bold text-center text-white mb-10">Meet the Team</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
           <div
@@ -136,24 +132,45 @@ function MeetTheTeam() {
               <img
                 src={member.photo}
                 alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mt-4 transition duration-300 "
+                className="w-32 h-32 rounded-full mx-auto mt-4 transition duration-300"
               />
             </div>
 
             {/* Text Content */}
             <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
-              <h2 className="text-3xl font-semibold text-white tracking-wider">
-                {member.name}
-              </h2>
-              <p className="text-yellow-400">{member.role}</p>
+              <h2 className="text-white text-xl font-semibold">{member.name}</h2>
+              <p className="text-sm text-gray-300">{member.role}</p>
+              <p className="text-white mt-2 italic">{`" ${member.message} "`}</p>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="absolute bottom-4 w-full p-2 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 hover:text-blue-500"
+              >
+                <i className="fab fa-linkedin text-2xl"></i>
+              </a>
+              <a
+                href={member.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 hover:text-blue-500"
+              >
+                <i className="fab fa-instagram text-2xl"></i>
+              </a>
             </div>
           </div>
         ))}
       </div>
-   <Footer/>
+      <Footer />
     </div>
   );
 }
+
+
    
 
 

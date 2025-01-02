@@ -2,7 +2,7 @@ import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import logo_lightt from '../pages/ece-removebg-preview.png';
+import EN from '../pages/EN.png';
 import logo from "../placeholder.svg";
 import bg from "./bg.jpg";
 import bgg from "./bgg.jpg";
@@ -43,21 +43,23 @@ const HomePage = () => {
     }, [])
 
     return (
-
-
+<div>
+      <Navbar />
         <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
-            <Navbar />
+            
 
             <main>
                 {/* Hero Section */}
                 <section
-                    className="relative min-h-screen flex items-center bg-cover bg-center"
-                    style={{
-                        backgroundImage: `url(${bg})`,
-                        width: 'auto',
-                        height: 'auto',
-                    }}
-                >
+  className="relative flex items-center bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${bg})`,
+    width: 'auto',
+    height: '90vh', // Set the height to 60% of the viewport height
+    maxHeight: '90vh', // Ensure it doesn't exceed 60% of the viewport height
+  }}
+>
+
 
                     {/* Hero Container */}
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 relative z-10">
@@ -85,7 +87,7 @@ const HomePage = () => {
   }}
 >
   <InteractiveImage
-    source={logo_lightt}
+    source= {EN}
     alt="E-Cell MIT Manipal Logo"
     className="w-full h-full object-contain rounded-3xl bg-transparent shadow-2xl"
     style={{
@@ -97,10 +99,10 @@ const HomePage = () => {
 <div className="parent-div h-screen flex flex-col">
   {/* Content section: Interactive text */}
   <div className="content-container flex-1 flex justify-start items-center pt-16">
-    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-center">
+    <h1 className="text-5xl md:text-7xl font-serif mb-6 leading-tight text-center">
       <span>
         <Typewriter
-          words={["WELCOME TO E-CELL MIT...", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
+          words={["WELCOME TO E-CELL MIT!", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
           loop={true} // Set to true for infinite looping
           cursor
           cursorStyle="|"
@@ -140,7 +142,7 @@ const HomePage = () => {
                 {/* Statistics Section */}
                 <section className="py-24 bg-blue-dark">
                     <div className="container mx-auto px-4 max-w-5xl">
-                        <h2 className="text-3xl font-bold mb-12 text-center">Results that matter</h2>
+                        <h2 className="text-3xl font-serif mb-12 text-center">Results that matter</h2>
 
                         <div className="grid md:grid-cols-3 gap-8 text-center">
                             {stats.map((stat, index) => (
@@ -153,7 +155,7 @@ const HomePage = () => {
                 {/* Initiatives Section */}
                 <section ref={initiativeRef} className="py-32 bg-blue-dark border-t border-blue-mid/30 overflow-hidden">
                     <div className="container mx-auto px-8 sm:px-10 lg:px-12">
-                        <h2 className="text-4xl font-bold mb-12 text-center">OUR INITIATIVES</h2>
+                        <h2 className="text-4xl font-serif mb-12 text-center">OUR INITIATIVES</h2>
 
                         <div ref={containerRef} className="flex overflow-x-hidden space-x-0">
                             {initiatives.map((initiative, index) => (
@@ -196,7 +198,7 @@ const HomePage = () => {
                     </svg>
                 </button>
             </main>
-
+</div>
             <Footer />
         </div>
     );

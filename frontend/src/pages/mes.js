@@ -1,8 +1,8 @@
-import React from 'react';
-import EventSection from '../components/EventSection';
-import "./vc.css";
+import React, { useState } from 'react';
+import './vc.css';
 import vc_photo from './bg.jpeg';
-
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const flagshipEvents = [
   {
@@ -45,19 +45,48 @@ const maheEvents = [
   }
 ];
 
-
-
 const vcList = [
-  { id: 1, name: "VC Name 1", photo: vc_photo },
-  { id: 2, name: "VC Name 2", photo: vc_photo },
-  { id: 3, name: "VC Name 3", photo: vc_photo },
-  { id: 4, name: "VC Name 4", photo: vc_photo },
-  { id: 5, name: "VC Name 5", photo: vc_photo },
-  { id: 6, name: "VC Name 6", photo: vc_photo },
+  { id: 1, name: "VC Name 1", photo: "https://via.placeholder.com/150" },
+  { id: 2, name: "VC Name 2", photo: "https://via.placeholder.com/150" },
+  { id: 3, name: "VC Name 3", photo: "https://via.placeholder.com/150" },
+  { id: 4, name: "VC Name 4", photo: "https://via.placeholder.com/150" },
+  { id: 5, name: "VC Name 5", photo: "https://via.placeholder.com/150" },
+  { id: 6, name: "VC Name 6", photo: "https://via.placeholder.com/150" },
 ];
 
-function Mes() {
+function EventSection({ title, events, gradient }) {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index); // Toggle the active index
+  };
+
   return (
+    <div className={`py-6 px-4 mb-8 rounded-lg bg-gradient-to-r ${gradient} text-black`}>
+      <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {events.map((event, index) => (
+          <div
+            key={index}
+            className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${
+              activeIndex === index ? 'scale-105' : ''
+            }`}
+            onClick={() => handleClick(index)} // Toggle scale animation
+          >
+            <h3 className="text-xl font-semibold mb-2">{event.name}</h3>
+            <p>{event.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Mes() {
+ 
+  return (
+    <div>
+    <Navbar/>
     <div className="bg-[#106B88] text-white min-h-screen">
       <div className="container mx-auto">
         {/* Events Section */}
@@ -65,18 +94,16 @@ function Mes() {
           <h1 className="text-4xl font-bold text-white font-serif">EVENTS</h1>
         </div>
         <div>
-        <EventSection title="FLAGSHIP" events={flagshipEvents} gradient="from-[#106B88] to-[#64CDC6]" />
+          <EventSection title="FLAGSHIP" events={flagshipEvents} gradient="from-[#106B88] to-[#64CDC6]" />
           <EventSection title="PAN INDIA" events={panIndiaEvents} gradient="from-[#106B88] to-[#64CDC6]" />
           <EventSection title="MAHE" events={maheEvents} gradient="from-[#64CDC6] to-[#106B88]" />
-          
         </div>
 
         {/* VC Section */}
-        
       </div>
-     
+      </div>
+      <Footer/>
     </div>
-   
   );
 }
 

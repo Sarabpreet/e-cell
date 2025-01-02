@@ -4,7 +4,7 @@ import { faTwitter, faInstagram, faYoutube, faLinkedinIn } from '@fortawesome/fr
 
 const Footer = () => {
   return (
-    <div className="bg-blue-dark text-blue-light py-12">
+    <div className="bg-blue-dark text-blue-light py-12 font-serif">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Know More Section */}
@@ -14,7 +14,7 @@ const Footer = () => {
               <li><a href="/Aboutus" className="text-blue-pale hover:text-blue-mid">About Us</a></li>
               <li><a href="/speakers" className="text-blue-pale hover:text-blue-mid">Speakers</a></li>
               <li><a href="/events" className="text-blue-pale hover:text-blue-mid">Events</a></li>
-              <li><a href="/contactus" className="text-blue-pale hover:text-blue-mid">Contact Us</a></li>
+            
             </ul>
           </div>
 
