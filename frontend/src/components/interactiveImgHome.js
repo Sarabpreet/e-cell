@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const InteractiveImage = ({ source, alt, className }) => {
     const [transform, setTransform] = useState("translateZ(0)");

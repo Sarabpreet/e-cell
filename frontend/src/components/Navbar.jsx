@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo_light from '../pages/logo.jpeg';
 import logo_lightt from '../pages/ece-removebg-preview.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
