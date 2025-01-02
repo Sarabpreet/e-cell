@@ -19,7 +19,7 @@ export const BlogCard = ({ imageLink, title, description, postURL }) => {
 
             {/* Card Content */}
             <div className="p-6">
-                <h2 className="text-xl text-left font-semibold text-white mb-2">{title}</h2>
+                <h2 className="text-xl text-center font-semibold text-white mb-2">{title}</h2>
 
                 {/* Description Section */}
                 {description && (
