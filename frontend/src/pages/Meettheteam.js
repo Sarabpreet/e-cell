@@ -165,6 +165,7 @@ function MeetTheTeam() {
           </div>
         ))}
       </div>
+      <br></br>
       <Footer />
     </div>
   );
