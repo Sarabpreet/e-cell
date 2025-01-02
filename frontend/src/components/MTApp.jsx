@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import aubg from "./aubg.jpg";
-import { Typewriter } from 'react-simple-typewriter';
 // Placeholder Images for the Carousel
 const images = [
   "https://media.licdn.com/dms/image/v2/D4D22AQGWW449-7zU2A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709367931390?e=1738195200&v=beta&t=47aPS6_EdCCPnkeC6HzuQdigKQQKaSFhhgsFt-i38xg",

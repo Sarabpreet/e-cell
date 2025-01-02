@@ -7,7 +7,7 @@ const InitiativeCard = ({ image, title, description }) => {
     <div
     className="bg-blue-dark rounded-lg shadow-lg overflow-hidden w-80 border-4 border-transparent transform transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 hover:rotate-1 hover:shadow-white hover:border-white"
   >
-      <img src={image} alt={`Image for ${title}`} className="w-full h-48 object-cover" />
+      <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4 text-center text-white">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <p className="text-white-600 text-sm mb-4 whitespace-pre-line">{description}</p>
@@ -47,7 +47,7 @@ metrics to ensure market readiness.`,
       <Navbar/>
     
 
-      <main className="flex justify-center items-center gap-8 flex-wrap p-8  flex-grow bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
+      <main className="flex justify-center items-center gap-8 flex-wrap flex-grow bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
         {initiatives.map((initiative, index) => (
           <InitiativeCard
             key={index}

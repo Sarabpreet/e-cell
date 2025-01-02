@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import EN from '../pages/EN.png';
 import logo from "../placeholder.svg";
 import bg from "./bg.jpg";
-import bgg from "./bgg.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 import { initiatives, stats } from "../assets/homeData";
