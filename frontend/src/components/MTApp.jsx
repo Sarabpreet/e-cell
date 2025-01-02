@@ -79,7 +79,7 @@ const MTApp = () => {
   <div className="absolute inset-0 bg-white opacity-170"></div> {/* Semi-transparent black overlay */}
   
   {/* Content goes here */}
-  <div className="relative font-style:mon z-10 text-black p-6">
+  <div className="relative font-serif z-10 text-black p-6 ">
     <h2 className="text-4xl font-bold mb-6">About E-Cell MIT Manipal</h2>
     <p className=" leading-relaxed text-sm mb-4 font-bold whitespace-pre-line">
       E-Cell MIT Manipal is a student-led organization that fosters entrepreneurial
