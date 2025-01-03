@@ -1,4 +1,14 @@
 export const flagshipEvents = [
+   
+    {
+        title: "INNOVATION MELA",
+        description: "Experience the thrill of exploration as we bring together innovators, thinkers, and visionaries from diverse fields. The Innovation Mela is not just an event; it's a celebration of human creativity, pushing the boundaries of what's possible.",
+        image: "https://i.ibb.co/t8scmY0/j.jpg",
+        postURL: "https://docs.google.com/forms/d/e/1FAIpQLSdu2y4NnVd_X_QynE_QhyNWg8uMBLMxfqF4zJZOl9ValCAybg/viewform?pli=1"
+    }
+];
+
+export const panIndiaEvents = [
     {
         title: "PITCH TANK",
         description: "💸! This is a closed door event where you 🫡🫵, students and start-ups can pitch in your ideas to our esteemed judges who happen to be venture capitalists, angel investors and alumni",
@@ -6,40 +16,10 @@ export const flagshipEvents = [
         postURL: "https://unstop.com/competitions/pitch-tank-manipal-entrepreneurship-summit-2025-manipal-academy-of-higher-education-mahe-karnataka-1293827"
     },
     {
-        title: "INNOVATION MELA",
-        description: "Experience the thrill of exploration as we bring together innovators, thinkers, and visionaries from diverse fields. The Innovation Mela is not just an event; it's a celebration of human creativity, pushing the boundaries of what's possible.",
-        image: "https://picsum.photos/400/200",
-        postURL: "https://example.com/"
-    }
-];
-
-export const panIndiaEvents = [
-    {
         title: "CASEMAZE",
         description: "Have a bit of interest in understanding and creating optimal solutions for companies?🤓🧐Case-Maze is here to get your brain cells running!.",
         image: "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/676554e771ea3_case-maze.webp",
         postURL: "https://unstop.com/competitions/case-maze-manipal-entrepreneurship-summit-2025-manipal-academy-of-higher-education-mahe-karnataka-1303034"
-    },
-    {
-        title: "PROD-A-TRON",
-        description: "PROD-A-TRON provides a dynamic challenge, simulating real-world scenarios where participants must make strategic decisions for product success!📈📈",
-        image: "https://picsum.photos/400/200",
-        postURL: "https://example.com/"
-    },
-    {
-        title: "PROMOQUEST",
-        description: "💪 Immerse yourself in a spirited competition where you'll face off with like-minded individuals, showcase your marketing knowledge, and vie for some seriously cool prizes.",
-        image: "https://picsum.photos/400/200",
-        postURL: "https://example.com/"
-    }
-];
-
-export const maheEvents = [
-    {
-        title: "MONEYQUEST",
-        description: "An exhilarating event that combines the excitement of a treasure hunt with the strategic thrill of a bidding competition involving a dynamic landscape of strategy, negotiation, and resource management",
-        image: "https://picsum.photos/400/200",
-        postURL: "https://example.com/"
     },
     {
         title: "REROUTE AND RESURGE",
@@ -47,11 +27,15 @@ export const maheEvents = [
         image: "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/676560ae431ad_reroute-and-resurge.webp",
         postURL: "https://unstop.com/competitions/reroute-and-resurge-manipal-entrepreneurship-summit-2025-manipal-academy-of-higher-education-mahe-karnataka-1303087"
     },
+    
+];
+
+export const maheEvents = [
     {
-        title: "ENTREPREUNERIAL JACKPOT",
-        description: "A thrilling entrepreneurial game with three rounds. Accumulated tokens are crucial, leading to the grand 'Innovation Showcase Finale' where surviving teams present AI solutions for final token rewards",
-        image: "https://picsum.photos/400/200",
-        postURL: "https://example.com/"
+        title: "MONEYQUEST",
+        description: "An exhilarating event that combines the excitement of a treasure hunt with the strategic thrill of a bidding competition involving a dynamic landscape of strategy, negotiation, and resource management",
+        image: "https://i.ibb.co/Z2Zv4BN/k.jpg",
+       
     }
 ];
 

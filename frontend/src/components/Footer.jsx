@@ -9,11 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Know More Section */}
           <div>
-            <h4 className=" text-lg mb-4">Know More</h4>
+            
             <ul className="space-y-2">
-              <li><a href="/Aboutus" className="text-blue-pale hover:text-blue-mid">About Us</a></li>
-              <li><a href="/speakers" className="text-blue-pale hover:text-blue-mid">Speakers</a></li>
-              <li><a href="/events" className="text-blue-pale hover:text-blue-mid">Events</a></li>
+             
             
             </ul>
           </div>
