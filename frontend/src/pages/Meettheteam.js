@@ -29,10 +29,10 @@ const teamMembers = [
   {
     name: "Mudit gupta",
     role: "Startup guidance and development",
- photo: "https://media.licdn.com/dms/image/v2/D5635AQGkpAZ--WlZew/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1734768684506?e=1735419600&v=beta&t=AQ_qBnSae45_SPhf74jrCYlwxr2VaBZeuIOXSFC-TYM",
+ photo: "https://i.ibb.co/SV8wTpG/jps.jpg",
     message: "The best way to predict future is to create it.",
     linkedin: "linkedin.com/in/mudit-gupta-92a8891b3",
-    instagram: "https://www.instagram.com/_mudit_gupta__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    instagram: "https://i.ibb.co/SV8wTpG/jps.jpg",
   },
   {
     name: "Aaryav Jain",
@@ -118,56 +118,62 @@ const teamMembers = [
 
 function MeetTheTeam() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-dark via-blue-mid font-serif to-blue-light p-10">
-      <Navbar />
-      <h1 className="text-4xl font-bold text-center text-white mb-10">Meet the Team</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="relative bg-blue-dark rounded-lg border-4 border-gold-400 shadow-2xl overflow-hidden group transform transition duration-500 hover:scale-105 hover:shadow-3xl"
-          >
-            {/* Photo */}
-            <div className="relative overflow-hidden">
-              <img
-                src={member.photo}
-                alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mt-4 transition duration-300"
-              />
-            </div>
-
-            {/* Text Content */}
-            <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
-              <h2 className="text-white text-xl font-semibold">{member.name}</h2>
-              <p className="text-sm text-gray-300">{member.role}</p>
-              <p className="text-white mt-2 italic">{`" ${member.message} "`}</p>
-            </div>
-
-            {/* Social Media Links */}
-            <div className="absolute bottom-4 w-full p-2 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold-400 hover:text-blue-500"
-              >
-                <i className="fab fa-linkedin text-2xl"></i>
-              </a>
-              <a
-                href={member.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold-400 hover:text-blue-500"
-              >
-                <i className="fab fa-instagram text-2xl"></i>
-              </a>
-            </div>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-dark via-blue-mid font-serif to-blue-light">
+  <header className="bg-blue-dark shadow-md">
+    <Navbar />
+  </header>
+  <br></br>
+  {/* Main Content */}
+  <main className="flex-grow">
+    <h1 className="text-4xl font-bold text-center text-white mb-10">Meet the Team</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      {teamMembers.map((member, index) => (
+        <div
+          key={index}
+          className="relative bg-blue-dark rounded-lg border-4 border-gold-400 shadow-2xl overflow-hidden group transform transition duration-500 hover:scale-105 hover:shadow-3xl"
+        >
+          <div className="relative overflow-hidden">
+            <img
+              src={member.photo}
+              alt={member.name}
+              className="w-32 h-32 rounded-full mx-auto mt-4 transition duration-300"
+            />
           </div>
-        ))}
-      </div>
-      <br></br>
-      <Footer />
+          <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
+            <h2 className="text-white text-xl font-semibold">{member.name}</h2>
+            <p className="text-sm text-gray-300">{member.role}</p>
+            <p className="text-white mt-2 italic">{`" ${member.message} "`}</p>
+          </div>
+          <div className="absolute bottom-4 w-full p-2 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-blue-500"
+            >
+              <i className="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a
+              href={member.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-blue-500"
+            >
+              <i className="fab fa-instagram text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      ))}
     </div>
+  </main>
+  <br></br>
+  
+  {/* Footer */}
+  <footer className="bg-blue-dark py-4 text-center text-white">
+    <Footer />
+  </footer>
+</div>
+
   );
 }
 

@@ -126,6 +126,23 @@ const MTApp = () => {
           </div>
         </div>
       </section>
+    
+<section className="py-16 bg-gray-100 text-black-700">
+  <div className="container mx-auto px-6">
+    <h2 className="text-4xl font-bold text-center mb-8">About MES</h2>
+    <div className="bg-white p-8 rounded-lg shadow-md">
+      <p className="text-lg leading-relaxed text-justify">
+        Manipal Entrepreneurship Summit (MES) is the flagship event of MAHE organized by E-Cell, MIT Manipal. 
+        Driven by our dedication to entrepreneurial growth, MES aims to transform the campus into a hub of innovation, 
+        where students are empowered to become job creators.
+      </p>
+      <p className="text-lg leading-relaxed text-justify mt-4">
+        The summit provides an inspiring platform, connecting ambitious students with successful alumni and industry leaders. 
+        It serves as a launchpad for ideas, a hub for networking, and a breeding ground for the next wave of Indian innovators and visionaries.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Call to Action Section */}
       <section className="py-16 bg-gray-900 text-white">

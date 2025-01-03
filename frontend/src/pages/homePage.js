@@ -15,6 +15,7 @@ import InteractiveImage from '../components/interactiveImgHome';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import blog from './BlogPage';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -177,7 +178,7 @@ const HomePage = () => {
                                 </p>
                             </div>
                             <Link
-                                to=""
+                                to="/blog"
                                 className="inline-block bg-blue-dark hover:bg-blue-mid text-white font-bold py-3 px-6 rounded-full transition-colors"
                             >
                                 Explore Blogs
