@@ -17,7 +17,9 @@ function EventSection({ title, events, gradient }) {
     <div className={`py-6 px-4 mb-8 rounded-lg bg-gradient-to-r ${gradient} text-black`}>
       <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
       <div
-        className="grid gap-6 justify-center"
+        className="grid ga\
+        
+        p-6 justify-center"
         style={{
           display: "flex", // Use flexbox for centering
           justifyContent: "center", // Horizontally center items
