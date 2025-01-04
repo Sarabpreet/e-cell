@@ -13,7 +13,7 @@ import InitiativeCard from '../components/initiativeCardHome';
 import InteractiveImage from '../components/interactiveImgHome';
 
 import EN from '../assets/images/EN.png';
-import bg from "./assets/images/bg.jpg";
+import bg from "../assets/images/bg.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
