@@ -2,21 +2,16 @@ import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import EN from '../pages/EN.png';
-import logo from "../placeholder.svg";
-import bg from "./bg.jpg";
+import bg from './bg.jpg';
 import { Typewriter } from "react-simple-typewriter";
 
 import { initiatives, stats } from "../assets/homeData";
 
 import StatCard from '../components/statCardHome';
 import InitiativeCard from '../components/initiativeCardHome';
-import InteractiveImage from '../components/interactiveImgHome';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import blog from './BlogPage';
-
 gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
@@ -46,8 +41,6 @@ const HomePage = () => {
 <div>
       <Navbar />
         <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
-            
-
             <main>
                 {/* Hero Section */}
                 <section
@@ -55,87 +48,40 @@ const HomePage = () => {
   style={{
     backgroundImage: `url(${bg})`,
     width: 'auto',
-    height: '90vh', // Set the height to 60% of the viewport height
-    maxHeight: '90vh', // Ensure it doesn't exceed 60% of the viewport height
+    height: '90vh',
+    maxHeight: '90vh',
   }}
 >
-
-
                     {/* Hero Container */}
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 relative z-10">
-                        <div className="grid md:grid-cols-2 gap-8 items-center text-center">
+                        <div className="grid md:grid-cols-1 gap-8 items-center text-center">
                             {/* Hero 3d effect Image */}
-                            <div
-  className="relative aspect-square w-full max-w-md mx-auto"
-  onMouseMove={(event) => {
-    const { currentTarget } = event;
-    const rect = currentTarget.getBoundingClientRect();
-    const x = event.clientX - rect.left - rect.width / 2;
-    const y = event.clientY - rect.top - rect.height / 2;
-
-    const rotateX = (y / rect.height) * 15; // Adjust the sensitivity as needed
-    const rotateY = (x / rect.width) * -15;
-
-    currentTarget.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
-  }}
-  onMouseLeave={(event) => {
-    event.currentTarget.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
-  }}
-  style={{
-    transition: "transform 0.2s ease-out",
-    perspective: "1000px",
-  }}
->
-  <InteractiveImage
-    source= {EN}
-    alt="E-Cell MIT Manipal Logo"
-    className="w-full h-full object-contain rounded-3xl bg-transparent shadow-2xl"
-    style={{
-      boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3), 0px 5px 10px rgba(0, 0, 0, 0.2)",
-    }}
-  />
-</div>
-
-<div className="parent-div h-screen flex flex-col">
-  {/* Content section: Interactive text */}
-  <div className="content-container flex-1 flex justify-start items-center pt-16">
-    <h1 className="text-5xl md:text-7xl font-serif mb-6 leading-tight text-center">
-      <span>
-        <Typewriter
-          words={["WELCOME TO E-CELL MIT!", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
-          loop={true} // Set to true for infinite looping
-          cursor
-          cursorStyle="|"
-          typeSpeed={250}
-          deleteSpeed={80}
-          delaySpeed={1000}
-        />
-      </span>
-    </h1>
-
-    <p className="text-xl text-gray-300 mb-8 font-montserrat text-center">
-      {/* Other content if necessary */}
-    </p>
-  </div>
-
-  {/* Button container: Centered at the bottom */}
-  <div className="button-container flex justify-center items-center pb-6">
-    <Link
-      to="/aboutus"
-      target="_blank"
-      className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors duration-200 ease-out"
-    >
-      Know More
-    </Link>
-  </div>
-</div>
-
-
-
-
+                            <div className="h-full flex flex-col justify-center items-center">
+                                <h1 className="text-5xl md:text-7xl font-serif mb-6 leading-tight text-center">
+                                    <span>
+                                        <Typewriter
+                                            words={["WELCOME TO E-CELL MIT!", "EMPOWERING INNOVATION", "BUILDING THE FUTURE"]}
+                                            loop={true}
+                                            cursor
+                                            cursorStyle="|"
+                                            typeSpeed={250}
+                                            deleteSpeed={80}
+                                            delaySpeed={1000}
+                                        />
+                                    </span>
+                                </h1>
 
                                 
+
+                                <Link
+                                    to="/aboutus"
+                                    target="_blank"
+                                    className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors duration-200 ease-out"
+                                >
+                                    Know More
+                                </Link>
                             </div>
+                        </div>
                     </div>
                 </section>
 
