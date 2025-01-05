@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Durgesh Hegde",
     role: "Deputy Chairperson",
  photo: "https://media.licdn.com/dms/image/v2/D4D03AQHxgBDJWVyCSQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708283162218?e=1740009600&v=beta&t=52PJGdxYPSIgckbOeLZ6eq2UePtZf1rARRYZac2DkBY"                                  ,
-    message: "it always seems impossible until its done.",
+    message: "It always seems impossible until its done.",
     linkedin: "linkedin.com/in/durgesh-hegde-82291925a",
     instagram: "https://www.instagram.com/durgeshhegde/?utm_source=ig_web_button_share_sheet",
   },
@@ -142,7 +142,7 @@ function MeetTheTeam() {
           <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
             <h2 className="text-white text-xl font-semibold">{member.name}</h2>
             <p className="text-sm text-gray-300">{member.role}</p>
-            <p className="text-sm text-gray-300">{member.message}</p>
+            <p className="text-sm font-serif text-gray-300">{member.message}</p>
           </div>
           <div className="absolute bottom-4 w-full p-2 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <a
