@@ -103,7 +103,7 @@ const HomePage = () => {
                     <div className="container mx-auto px-8 sm:px-10 lg:px-12">
                         <h2 className="text-4xl font-serif mb-12 text-center">OUR INITIATIVES</h2>
 
-                        <div ref={containerRef} className="flex overflow-x-hidden space-x-0">
+                        <div ref={containerRef} className="flex overflow-x-hidden text-center space-x-0">
                             {initiatives.map((initiative, index) => (
                                 <div key={index} className="initiative-card flex-shrink-0 w-full px-4">
                                     <InitiativeCard heading={initiative.heading} description={initiative.description} isEnabled={initiative.isEnabled} link={initiative.link} />
