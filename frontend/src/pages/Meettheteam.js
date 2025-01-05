@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Ashutosh Swain",
     role: "Chairperson",
     photo: "https://media.licdn.com/dms/image/v2/D4E03AQFhXMuGyXGwqg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708528663186?e=1740009600&v=beta&t=ATI85z_xhg1dSN08rB-k6zE3oo_j6doMAlrTktzBu8w",
-    message: "Ideas are easy,Execution is everything",
+    message: "Ideas are easy, execution is everything",
     linkedin: "https://linkedin.com/in/ashutosh-swain-ecell",
     instagram: " https://www.instagram.com/itzswain/?utm_source=ig_web_button_share_sheet",
   },
@@ -142,7 +142,7 @@ function MeetTheTeam() {
           <div className="relative bottom-0 w-full p-4 bg-opacity-80 bg-blue-dark text-center transition-colors duration-300 z-10 group-hover:bg-opacity-90">
             <h2 className="text-white text-xl font-semibold">{member.name}</h2>
             <p className="text-sm text-gray-300">{member.role}</p>
-            <p className="text-white mt-2 italic">{`" ${member.message} "`}</p>
+          
           </div>
           <div className="absolute bottom-4 w-full p-2 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <a
