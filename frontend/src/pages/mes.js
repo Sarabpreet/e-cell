@@ -7,41 +7,44 @@ import { BlogList } from '../components/blogCard';
 
 import { vcList, panIndiaEvents, maheEvents, flagshipEvents } from '../assets/mesData';
 
-// function EventSection({ title, events, gradient }) {
-//   const [activeIndex, setActiveIndex] = useState(null);
+function EventSection({ title, events, gradient }) {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-//   const handleClick = (index) => {
-//     setActiveIndex(index === activeIndex ? null : index); // Toggle the active index
-//   };
-//   return (
-//     <div className={`py-6 px-4 mb-8 rounded-lg bg-gradient-to-r ${gradient} text-black`}>
-//       <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
-//       <div
-//         className="grid gap-6 justify-center"
-//         style={{
-//           display: "flex", // Use flexbox for centering
-//           justifyContent: "center", // Horizontally center items
-//           alignItems: "center", // Vertically center items if needed
-//         }}
-//       >
-//         {events.map((event, index) => (
-//           <div
-//             key={index}
-//             className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
-//             onClick={() => handleClick(index)}
-//             style={{
-//               textAlign: "center", // Center align text
-//               maxWidth: "400px", // Optional: Restrict the width of the card
-//             }}
-//           >
-//             <h3 className="text-xl font-semibold mb-2">{event.name}</h3>
-//             <p>{event.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   ); 
-// }
+  const handleClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index); // Toggle the active index
+  };
+  return (
+    <div className={`py-6 px-4 mb-8 rounded-lg bg-gradient-to-r ${gradient} text-black`}>
+      <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
+      <div
+        className="grid gap-6 justify-center"
+        style={{
+          display: "flex", // Use flexbox for centering
+          justifyContent: "center", // Horizontally center items
+          alignItems: "center", // Vertically center items if needed
+        }}
+      >
+        {events.map((event, index) => (
+          <div
+            key={index}
+            className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
+            onClick={() => handleClick(index)}
+            style={{
+              textAlign: "center", // Center align text
+              maxWidth: "400px", // Optional: Restrict the width of the card
+            }}
+          >
+            <h3 className="text-xl font-semibold mb-2">{event.name}</h3>
+            <p>{event.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+  
+  
+  
+}
 
 function Mes() {
 
