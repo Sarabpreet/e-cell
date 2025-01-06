@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { BlogList } from "../components/blogCard";
+import Meta from '../components/meta';
 
 // Import your local image
 import blogScreenshot from '../assets/images/blogScreenshot.png';
@@ -57,6 +58,7 @@ const sampleBlogData = [
 const BlogPage = () => {
   return (
     <div className="min-h-screen font-montserrat">
+      <Meta />
       <Navbar />
 
       <main>
