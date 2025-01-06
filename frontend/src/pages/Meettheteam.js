@@ -123,7 +123,7 @@ function MeetTheTeam() {
   <header className="bg-blue-dark shadow-md">
     <Navbar />
   </header>
-  <Meta />
+  <Meta title='Meet The Team | E-Cell | MIT Manipal' />
   <br></br>
   {/* Main Content */}
   <main className="flex-grow">

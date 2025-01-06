@@ -40,7 +40,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <Meta />
+            <Meta title='Home | E-Cell | Official Entrepreneurship club of MIT Manipal' />
             <Navbar />
             <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
                 <main>

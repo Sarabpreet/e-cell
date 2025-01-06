@@ -16,7 +16,6 @@ function EventSection({ title, events, gradient }) {
   };
   return (
     <div className={`py-6 px-4 mb-8 rounded-lg bg-gradient-to-r ${gradient} text-black`}>
-      <Meta />
       <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
       <div
         className="grid ga\
@@ -30,13 +29,13 @@ function EventSection({ title, events, gradient }) {
       >
         {events.map((event, index) => (
           <div
-            key={index}
-            className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
-            onClick={() => handleClick(index)}
-            style={{
-              textAlign: "center", // Center align text
-              maxWidth: "400px", // Optional: Restrict the width of the card
-            }}
+          key={index}
+          className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
+          onClick={() => handleClick(index)}
+          style={{
+            textAlign: "center", // Center align text
+            maxWidth: "400px", // Optional: Restrict the width of the card
+          }}
           >
             <h3 className="text-xl font-semibold mb-2">{event.name}</h3>
             <p>{event.description}</p>
@@ -54,6 +53,7 @@ function Mes() {
 
   return (
     <div>
+      <Meta title='Manipal Entrepreneurship Summit (MES) | E-Cell | MIT Manipal' />
       <Navbar />
       {/* <div className="bg-[#106B88] text-white min-h-screen">
         <div className="container mx-auto"> */}

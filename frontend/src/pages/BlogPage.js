@@ -58,7 +58,7 @@ const sampleBlogData = [
 const BlogPage = () => {
   return (
     <div className="min-h-screen font-montserrat">
-      <Meta />
+      <Meta title="Blogs | E-Cell | MIT Manipal"/>
       <Navbar />
 
       <main>

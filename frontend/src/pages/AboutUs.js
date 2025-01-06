@@ -7,7 +7,7 @@ import Meta from '../components/meta';
 const AboutUs = () => {
   return (
     <div>
-      <Meta />
+      <Meta title='About E-Cell | Official Entrepreneurship club of MIT Manipal' />
       <Navbar />
       {/* Here comes the Meet the Team component */}
       <MTApp />
