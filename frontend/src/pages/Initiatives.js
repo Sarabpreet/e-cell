@@ -1,13 +1,12 @@
 import React from "react";
-
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
+import bg from "./bcl.png";
 const InitiativeCard = ({ image, title, description }) => {
   return (
     <div
-      className="bg-blue-dark rounded-lg shadow-lg overflow-hidden w-80 border-4 border-transparent transform transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 hover:rotate-1 hover:shadow-white hover:border-white"
-    >
+    className="bg-blue-dark rounded-lg shadow-lg overflow-hidden w-80 border-4 border-transparent transform transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 hover:rotate-1 hover:shadow-white hover:border-white"
+  >
       <img src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4 text-center text-white">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
@@ -33,7 +32,7 @@ informed. Startups from MAHE are given a spotlight in each edition, with their j
 achievements showcased.`,
     },
     {
-      image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGRoAIsN1gSecF7WTPBw2O__hG63xXaDJ8E1MpktjqQ4k8VLst4EknFmTAKaGpc1oZ4HYz2FSqoQgksvKpwwaMwHgA2KY7iofXUEpVNvFINddGiGZKYF0vVabidYtbwdWguj1cnQuzYIilG9S-fx8gS9yj-_qYQVk2kz2mQPARqKc2zD8cjwHGi8ct/s320/Untitled%20design.png",
+      image:  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGRoAIsN1gSecF7WTPBw2O__hG63xXaDJ8E1MpktjqQ4k8VLst4EknFmTAKaGpc1oZ4HYz2FSqoQgksvKpwwaMwHgA2KY7iofXUEpVNvFINddGiGZKYF0vVabidYtbwdWguj1cnQuzYIilG9S-fx8gS9yj-_qYQVk2kz2mQPARqKc2zD8cjwHGi8ct/s320/Untitled%20design.png",
       title: "Business Clinic",
       description: `Business Clinic is a structured approach to helping startups refine ideas, validate 
 feasibility, and identify target markets. It emphasizes solving key problems, understanding 
@@ -45,8 +44,8 @@ metrics to ensure market readiness.`,
 
   return (
     <div className="min-h-screen flex flex-col ">
-      <Navbar />
-
+      <Navbar/>
+    
 
       <main className="flex justify-center items-center gap-8 flex-wrap flex-grow bg-gradient-to-br from-blue-dark via-blue-mid to-blue-light p-10">
         {initiatives.map((initiative, index) => (
@@ -59,8 +58,8 @@ metrics to ensure market readiness.`,
         ))}
 
       </main>
-      <Footer />
-
+      <Footer/>
+      
     </div>
   );
 };
