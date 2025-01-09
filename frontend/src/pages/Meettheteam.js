@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Meta from '../components/meta';
 
 const teamMembers = [
   {
@@ -122,6 +123,7 @@ function MeetTheTeam() {
   <header className="bg-blue-dark shadow-md">
     <Navbar />
   </header>
+  <Meta title='Meet The Team | E-Cell | MIT Manipal' />
   <br></br>
   {/* Main Content */}
   <main className="flex-grow">

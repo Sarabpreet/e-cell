@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { BlogList } from '../components/blogCard';
 
 import { vcList, panIndiaEvents, maheEvents, flagshipEvents } from '../assets/mesData';
+import Meta from '../components/meta';
 
 function EventSection({ title, events, gradient }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -28,13 +29,13 @@ function EventSection({ title, events, gradient }) {
       >
         {events.map((event, index) => (
           <div
-            key={index}
-            className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
-            onClick={() => handleClick(index)}
-            style={{
-              textAlign: "center", // Center align text
-              maxWidth: "400px", // Optional: Restrict the width of the card
-            }}
+          key={index}
+          className={`p-6 bg-transparent border border-white rounded-lg shadow-lg h-full cursor-pointer transform transition-all duration-300 ease-in-out ${activeIndex === index ? 'scale-105' : ''}`}
+          onClick={() => handleClick(index)}
+          style={{
+            textAlign: "center", // Center align text
+            maxWidth: "400px", // Optional: Restrict the width of the card
+          }}
           >
             <h3 className="text-xl font-semibold mb-2">{event.name}</h3>
             <p>{event.description}</p>
@@ -52,6 +53,7 @@ function Mes() {
 
   return (
     <div>
+      <Meta title='Manipal Entrepreneurship Summit (MES) | E-Cell | MIT Manipal' />
       <Navbar />
       {/* <div className="bg-[#106B88] text-white min-h-screen">
         <div className="container mx-auto"> */}
