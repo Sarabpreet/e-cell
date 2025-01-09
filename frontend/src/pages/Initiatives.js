@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import bg from "./bcl.png";
+import Meta from "../components/meta";
 
 const InitiativeCard = ({ image, title, description }) => {
   return (
@@ -45,6 +46,7 @@ metrics to ensure market readiness.`,
 
   return (
     <div className="min-h-screen flex flex-col ">
+      <Meta title="Initiatives | E-Cell | MIT Manipal"/>
       <Navbar/>
     
 
