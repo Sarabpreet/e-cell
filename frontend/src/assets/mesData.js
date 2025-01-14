@@ -39,11 +39,30 @@ export const maheEvents = [
     }
 ];
 
-export const vcList = [
-    { id: 1, name: "VC Name 1", photo: "https://via.placeholder.com/150" },
-    { id: 2, name: "VC Name 2", photo: "https://via.placeholder.com/150" },
-    { id: 3, name: "VC Name 3", photo: "https://via.placeholder.com/150" },
-    { id: 4, name: "VC Name 4", photo: "https://via.placeholder.com/150" },
-    { id: 5, name: "VC Name 5", photo: "https://via.placeholder.com/150" },
-    { id: 6, name: "VC Name 6", photo: "https://via.placeholder.com/150" },
-];
+export const CONTACT_INFO = {
+  coordinators: [
+    {
+      name: "Ashutosh Swain",
+      phone: "+91-88306 91247"
+    },
+    {
+      name: "Mahima Sharma",
+      phone: "+91-88519 48246"
+    },
+    {
+      name: "Saksham Goel",
+      phone: "+91-99285 48797"
+    }
+  ],
+  location: {
+    name: "Innovation Centre",
+    address: "MAHE Manipal",
+    link: "https://maps.app.goo.gl/example"
+  },
+  social: {
+    instagram: "#",
+    linkedin: "#",
+    youtube: "#",
+    twitter: "#"
+  }
+};
