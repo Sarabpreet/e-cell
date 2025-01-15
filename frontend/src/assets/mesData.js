@@ -3,7 +3,7 @@ export const flagshipEvents = [
     {
         title: "INNOVATION MELA",
         description: "Experience the thrill of exploration as we bring together innovators, thinkers, and visionaries from diverse fields. The Innovation Mela is not just an event; it's a celebration of human creativity, pushing the boundaries of what's possible.",
-        image: "https://i.ibb.co/t8scmY0/j.jpg",
+      
         postURL: "https://docs.google.com/forms/d/e/1FAIpQLSdu2y4NnVd_X_QynE_QhyNWg8uMBLMxfqF4zJZOl9ValCAybg/viewform?pli=1"
     }
 ];
@@ -34,7 +34,7 @@ export const maheEvents = [
     {
         title: "MONEYQUEST",
         description: "An exhilarating event that combines the excitement of a treasure hunt with the strategic thrill of a bidding competition involving a dynamic landscape of strategy, negotiation, and resource management",
-        image: "https://i.ibb.co/Z2Zv4BN/k.jpg",
+
        
     }
 ];
