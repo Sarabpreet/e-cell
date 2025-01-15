@@ -23,7 +23,7 @@ const VideoSection = () => {
             A GLIMPSE INTO THE PAST
           </h2>
           <div className="text-7xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">
-            MES &apos;25
+            MES &apos;24
           </div>
           
           <button className="mt-8 flex items-center gap-2 mx-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full transition-colors text-lg">
