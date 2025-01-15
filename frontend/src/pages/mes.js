@@ -21,11 +21,10 @@ const Mes = () => {
       <Navbar />
       <Hero />
       <VideoSection />
-      <Speakers />
-      <VentureCapitalists />
       <Events />
-      <Timeline />
-      <Payment />
+      <Speakers />
+    <Timeline />
+   
       <ContactInfo />
       <Footer />
     </div>

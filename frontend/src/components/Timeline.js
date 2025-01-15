@@ -4,25 +4,22 @@ const timelineEvents = [
   {
     date: 'Feb 6',
     events: [
-      { time: '09:00 AM', title: 'Opening Ceremony', speaker: 'Dr. Aisha Patel' },
-      { time: '11:00 AM', title: 'AI in Entrepreneurship', speaker: 'Michael Rodriguez' },
-      { time: '02:00 PM', title: 'Startup Funding Strategies', speaker: 'James Park' },
+      { time: '09:00 AM', title: 'TBA' },
+      { time: '02:00 PM',title: 'TBA'  },
     ]
   },
   {
     date: 'Feb 7',
     events: [
-      { time: '10:00 AM', title: 'Innovation in Healthcare', speaker: 'Dr. Emily Watson' },
-      { time: '01:00 PM', title: 'Tech Entrepreneurship Panel', speaker: 'Multiple Speakers' },
-      { time: '04:00 PM', title: 'Networking Session', speaker: null },
+      { time: '09:00 AM', title: 'TBA' },
+      { time: '02:00 PM',title: 'TBA'  },
     ]
   },
   {
     date: 'Feb 8',
     events: [
-      { time: '09:30 AM', title: 'Future of Work', speaker: 'Dr. Aisha Patel' },
-      { time: '11:30 AM', title: 'Pitch Competition', speaker: null },
-      { time: '03:00 PM', title: 'Closing Ceremony', speaker: 'Michael Rodriguez' },
+      { time: '09:00 AM', title: 'TBA' },
+      { time: '02:00 PM',title: 'TBA'  },
     ]
   },
 ]
