@@ -4,22 +4,26 @@ const timelineEvents = [
   {
     date: 'Feb 6',
     events: [
-      { time: '09:00 AM', title: 'TBA' },
-      { time: '02:00 PM',title: 'TBA'  },
+      { time: '02:00 PM', title: 'Inaugration Ceremony',speaker:'Quadrangle, MIT' },
+      { time: '06:00 PM',title: 'Deep Tech Conclave',speaker:'M V Seminar Hall, MIT' },
     ]
   },
   {
     date: 'Feb 7',
     events: [
-      { time: '09:00 AM', title: 'TBA' },
-      { time: '02:00 PM',title: 'TBA'  },
+      { time: '1:30 PM', title: 'Pitch Tank',speaker:'M V Seminar Hall, MIT' },
+      { time: '03:00 PM',title: 'Family Business Conclave',speaker:'DOC'  },
+      { time: '04:30 PM',title: 'HealthTech Conclave',speaker:'KMC'  },
+      { time: '05:00 PM',title: 'InfoTech Conclave',speaker:'Library Auditorium, MIT'  },
+      { time: '06:15 PM',title: 'Fireside Chat',speaker:'Library Auditorium, MIT'  },
+      { time: '07:30 PM',title: 'Networking Dinner',speaker:'Quadrangle, MIT'  }
     ]
   },
   {
     date: 'Feb 8',
     events: [
-      { time: '09:00 AM', title: 'TBA' },
-      { time: '02:00 PM',title: 'TBA'  },
+      { time: '09:00 AM', title: 'Innovation Mela',speaker:'MIT' },
+      { time: '06:00 PM',title: "Influencer's Conclave",speaker:'Quadrangle, MIT'  },
     ]
   },
 ]
@@ -74,7 +78,8 @@ export default function Timeline() {
                   <div className="flex-grow bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
                     <h4 className="text-xl font-semibold text-white mb-2">{event.title}</h4>
                     {event.speaker && (
-                      <p className="text-purple-400">Speaker: {event.speaker}</p>
+                      <p className="text-purple-400">Venue: {event.speaker}</p>
+                      
                     )}
                   </div>
                 </div>

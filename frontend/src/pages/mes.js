@@ -24,8 +24,6 @@ const Mes = () => {
       <Events />
       <Speakers />
     <Timeline />
-   
-      <ContactInfo />
       <Footer />
     </div>
   );
