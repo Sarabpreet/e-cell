@@ -120,6 +120,10 @@ const teamMembers = [
 function MeetTheTeam() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-dark via-blue-mid font-serif to-blue-light">
+      <meta name="description" content="Meet the passionate team behind E-Cell MIT Manipal, driving innovation and entrepreneurship among students and startups."/>
+<meta name="keywords" content="E-Cell Team, MIT Manipal, Entrepreneurship Mentors, Startup Experts, Leadership, Innovation Leaders"/>
+<meta name="author" content="E-Cell MIT Manipal"/>
+
   <header className="bg-blue-dark shadow-md">
     <Navbar />
   </header>
