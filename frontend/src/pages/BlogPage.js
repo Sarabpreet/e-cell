@@ -59,6 +59,14 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen font-montserrat">
       <Meta title="Blogs | E-Cell | MIT Manipal"/>
+      <meta name="description" content="Get comprehensive startup support with E-Cell MIT Manipal, including mentorship, funding opportunities, and incubation services."/>
+<meta name="keywords" content="Startup Support, Mentorship, E-Cell Services, Startup Incubation, Funding Opportunities, Entrepreneurship, MIT Manipal Startups"/>
+<meta name="description" content="Access resources, blog posts, and articles from E-Cell MIT Manipal to learn more about entrepreneurship, startups, and business tips."/>
+<meta name="keywords" content="Entrepreneurship Blog, Startup Resources, E-Cell Articles, MIT Manipal, Startup Growth, Business Tips, Entrepreneurship Trends"/>
+
+
+<meta name="author" content="E-Cell MIT Manipal"/>
+
       <Navbar />
 
       <main>
