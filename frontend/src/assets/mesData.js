@@ -1,12 +1,14 @@
+import bg from './bb.jpg';
+
 export const flagshipEvents = [
-   
     {
         title: "INNOVATION MELA",
         description: "Experience the thrill of exploration as we bring together innovators, thinkers, and visionaries from diverse fields. The Innovation Mela is not just an event; it's a celebration of human creativity, pushing the boundaries of what's possible.",
-         image:"https://learnermanipal-my.sharepoint.com/personal/photography_mit_manipal_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fphotography%5Fmit%5Fmanipal%5Fedu%2FDocuments%2FMES%202024%2F16th%2FInnovation%20Mela%2FAshutosh%20Kumar%20Verma%2FPhotos%2FDSC06266%2D27%2D27%2Ejpg&parent=%2Fpersonal%2Fphotography%5Fmit%5Fmanipal%5Fedu%2FDocuments%2FMES%202024%2F16th%2FInnovation%20Mela%2FAshutosh%20Kumar%20Verma%2FPhotos",
+        image: bg, // Directly use the imported image
         postURL: "https://docs.google.com/forms/d/e/1FAIpQLSdu2y4NnVd_X_QynE_QhyNWg8uMBLMxfqF4zJZOl9ValCAybg/viewform?pli=1"
     }
 ];
+
 
 export const panIndiaEvents = [
     {

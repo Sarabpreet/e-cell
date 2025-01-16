@@ -17,14 +17,32 @@ const Footer = () => {
           </div>
 
           {/* Contact Us Section */}
-          <div>
-            <h4 className="font-bold text-lg mb-4">Contact Us</h4>
-            <ul className="space-y-2">
-              <li><p>Ashutosh Swain<br/> <span className="text-blue-pale">+91-88306 91247</span></p></li>
-              <li><p>Mahima Sharma  <br/><span className="text-blue-pale">+91-88519 48246</span></p></li>
-              <li><p>Saksham Goel<br/> <span className="text-blue-pale">+91-99285 48797</span></p></li>
-            </ul>
-          </div>
+       {/* Contact Us Section */}
+<div className="hidden sm:block w-full px-4 py-6 sm:px-6 md:px-8 lg:px-10 text-center">
+  <h4 className="font-bold text-xl md:text-2xl mb-6">Contact Us</h4>
+  <ul className="space-y-4">
+    <li>
+      <p className="text-base md:text-lg">
+        Ashutosh Swain<br />
+        <span className="text-blue-pale text-sm md:text-base block">+91-88306 91247</span>
+      </p>
+    </li>
+    <li>
+      <p className="text-base md:text-lg">
+        Mahima Sharma<br />
+        <span className="text-blue-pale text-sm md:text-base block">+91-88519 48246</span>
+      </p>
+    </li>
+    <li>
+      <p className="text-base md:text-lg">
+        Saksham Goel<br />
+        <span className="text-blue-pale text-sm md:text-base block">+91-99285 48797</span>
+      </p>
+    </li>
+  </ul>
+</div>
+
+
 
           {/* Location Section with Google Maps Image */}
           <div>
