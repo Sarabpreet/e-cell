@@ -43,7 +43,7 @@ const Hero = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
           className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mt-8"
         >
-          ₹5 Lakh Prize Pool
+          ₹4 Lakh Prize Pool
         </motion.div>
       </motion.div>
     </div>

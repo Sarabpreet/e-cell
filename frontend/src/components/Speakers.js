@@ -18,13 +18,13 @@ import a2 from  './chashma.png';
 import a3 from  './abdul.png';
 import a4 from  './ladki.png';
 import a5 from  './faculty-24.png';
-
+import a6 from  './a6.png';
 const speakers = [
   { id: 9, name: "Dr. Arokiaswamy Velumani", role: "Founder, Thyrocare", description: "Keynote Speaker", imageUrl: img1 },
  
-  { id: 11, name: "Raj Shamani", role: "Influencer", imageUrl: rs },
-  { id: 13, name: "Iqlipse Nova", role: "Influencer", description: "Influencers’ Conclave", imageUrl: iqlipseNova },
-  { id: 12, name: "Dinesh Pai", role: "VP, Zerodha", description: "Investing in Impact (Fireside Chat)", imageUrl:dineshPai }
+  { id: 11, name: "Raj Shamani", role:"Founder: House of X, Host: Figuring Out (India’s #1 Podcast - Spotify) Forbes 30 Under 30", description: "Influencer",imageUrl: rs },
+  { id: 13, name: "Iqlipse Nova",role :"Co-founder : BigBrainco , Singer",description: "Influencer", imageUrl: iqlipseNova },
+  { id: 12, name: "Dinesh Pai", role: "VP, Zerodha & contributing to climate initiatives and sustainability through Rainmatter Climate Foundation", description: "Investing in Impact (Fireside Chat) ", imageUrl:dineshPai }
 ];
 
 const Deeptech = [
@@ -44,10 +44,12 @@ const Infotech = [
 
 const FamilyBusiness = [
   { id: 15, name: "Dr. Sampath Dorairajan", role: "Business Coach", description: "Family-Owned Organisations", imageUrl: a5 },
+  {id:21, name:"Mr. S S Gopala Rathnam",role:"Chairperson-SSG",description:"Insurance Broker",imageUrl:a6},
   { id: 16, name: "Ms. Vathika Pai", role: "Proprietor", description: "Vathika International Travels", imageUrl: a1 },
   { id: 17, name: "Mr. Vineeth Vij", role: "Head of Sales", description: "Suvikar Enterprises", imageUrl: a2},
   { id: 18, name: "Ms. Dhara Bhasin", role: "Founder", description: "Baylink", imageUrl: a4 },
   { id: 19, name: "Mr. Ahmed Mudassar", role: "Partner", description: "P.B Abdul Hameed & Sons", imageUrl: a3 }
+ 
 ];
 
 
@@ -85,7 +87,7 @@ const Speakers = () => {
   return (
     <section className="py-20 px-4" id="speakers">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">Speakers</h2>
+        <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">Keynote Speakers and Influencers' Conclave</h2>
         <div className={`grid gap-8 ${getGridClass(speakers.length)}`}>
           {speakers.map((speaker) => (
             <div key={speaker.id} className="bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors flex flex-col">
