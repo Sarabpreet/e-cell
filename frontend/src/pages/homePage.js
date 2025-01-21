@@ -81,11 +81,11 @@ const HomePage = () => {
 
 
                                     <Link
-                                        to="/aboutus"
+                                        to="/mes"
                                         target="_blank"
                                         className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors duration-200 ease-out"
                                     >
-                                        Know More
+                                      MES 2025
                                     </Link>
                                 </div>
                             </div>

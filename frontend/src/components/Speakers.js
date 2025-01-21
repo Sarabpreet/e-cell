@@ -1,32 +1,106 @@
 import React from 'react';
+import img1 from './velumani.png';
+import ashneer from './ashneer.png';
+import d1 from './deep tech 1.png';
+import d2 from './deep tech 2.png';
+import d3 from './deep tech 3.png';
+import d4 from './deep tech 4.png';
+import dineshPai from './dinesh pai.png';
+import i1 from './info tech 1.png';
+import i2 from './info tech 2.png';
+import i3 from './info tech 3.png';
+import i4 from './info tech 4.png';
+import i5 from './info tech 5.png';
+import iqlipseNova from './iqlipse nova.png';
+import rs from './raj shamani.png';
 
 const speakers = [
-  { id: 1, name: "Dr. Aisha Patel", role: "AI Ethics Researcher" },
-  { id: 2, name: "Michael Rodriguez", role: "Tech Entrepreneur" },
-  { id: 3, name: "Dr. Emily Watson", role: "Healthcare Innovator" },
-  { id: 4, name: "James Park", role: "Venture Capitalist" }
+  { id: 9, name: "Dr. Arokiaswamy Velumani", role: "Founder, Thyrocare", description: "Keynote Speaker", imageUrl: img1 },
+ 
+  { id: 11, name: "Raj Shamani", role: "Influencer", imageUrl: rs },
+  { id: 13, name: "Iqlipse Nova", role: "Influencer", description: "Influencers’ Conclave", imageUrl: iqlipseNova },
+  { id: 12, name: "Dinesh Pai", role: "VP, Zerodha", description: "Investing in Impact (Fireside Chat)", imageUrl: dineshPai }
 ];
 
+const Deeptech = [
+  { id: 5, name: "Tushar Bhatnagar", role: "Founder, VidBoard AI", description: "AI Powered Futures", imageUrl: d1 },
+  { id: 6, name: "Silky Singh", role: "Founder, Finomial", imageUrl: d2 },
+  { id: 7, name: "Manoj Sankar", role: "Founder, Nemo.Care", imageUrl: d3 },
+  { id: 8, name: "Amit Das", role: "Founder, Think 360 AI", imageUrl: d4 }
+];
+
+const Infotech = [
+  { id: 1, name: "Ishan Sukul", role: "Co-Founder, Kreo", description: "From Hostel Rooms to Board Rooms", imageUrl: i1 },
+  { id: 2, name: "Shroat Mehta", role: "Founder’s Office, Kreo", imageUrl: i2 },
+  { id: 3, name: "Dhwanit Shah", role: "Founder, E-Cell MIT", imageUrl: i3 },
+  { id: 4, name: "Rima Naware", role: "Co-Founder, ZigMe", imageUrl: i4 },
+  { id: 14, name: "Tushar Bhatnagar", role: "Deeptech Speaker", imageUrl: i5 }
+];
+
+const FamilyBusiness = [
+  { id: 15, name: "Dr. Sampath Dorairajan", role: "Business Coach", description: "Family-Owned Organisations", imageUrl: "https://via.placeholder.com/300x300?text=Dr.+Sampath+Dorairajan" },
+  { id: 16, name: "Ms. Vathika Pai", role: "Proprietor", description: "Vathika International Travels", imageUrl: "https://via.placeholder.com/300x300?text=Vathika+Pai" },
+  { id: 17, name: "Mr. Vineeth Vij", role: "Head of Sales", description: "Suvikar Enterprises", imageUrl: "https://via.placeholder.com/300x300?text=Vineeth+Vij" },
+  { id: 18, name: "Ms. Dhara Bhasin", role: "Founder", description: "Baylink", imageUrl: "https://via.placeholder.com/300x300?text=Dhara+Bhasin" },
+  { id: 19, name: "Mr. Ahmed Mudassar", role: "Partner", description: "P.B Abdul Hameed & Sons", imageUrl: "https://via.placeholder.com/300x300?text=Ahmed+Mudassar" }
+];
+
+
 const Speakers = () => {
+  const getGridClass = (arrLength) => {
+    if (arrLength === 2) {
+      return "grid-cols-1 md:grid-cols-2 justify-center"; // Center 2 items
+    } else if (arrLength === 3) {
+      return "grid-cols-1 md:grid-cols-3 justify-center"; // Center 3 items
+    } else {
+      return "grid-cols-1 md:grid-cols-2 lg:grid-cols-4"; // Default layout
+    }
+  };
+
+  const renderSpeakers = (category, title) => (
+    <div className="container mx-auto mt-16">
+      <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">{title}</h2>
+      <div className={`grid gap-8 ${getGridClass(category.length)}`}>
+        {category.map((speaker) => (
+          <div key={speaker.id} className="bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors flex flex-col">
+            <img
+              src={speaker.imageUrl}
+              alt={speaker.name}
+              className="w-full h-65 object-contain rounded-lg mb-4 bg-gray-800" // Maintains aspect ratio, centers smaller images
+            />
+            <h3 className="text-xl font-semibold text-white mb-2">{speaker.name}</h3>
+            <p className="text-[#22d3ee] mb-2">{speaker.role}</p>
+            <p className="text-sm text-gray-300 flex-grow">{speaker.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <section className="py-20 px-4" id="speakers">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">Speakers</h2>
-
-      
-        <div className="bg-white/10 rounded-lg p-8 text-center">
-          <h3 className="text-3xl font-bold text-[#22d3ee] mb-4">More Speakers To Be Announced</h3>
-          <p className="text-xl text-gray-300">Stay tuned for updates on our exciting lineup of industry leaders and innovators!</p>
-          <div className="mt-8 flex justify-center space-x-4">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="w-16 h-16 bg-gradient-to-br from-[#22d3ee]/20 to-purple-400/20 rounded-full animate-pulse"></div>
-            ))}
-          </div>
+        <div className={`grid gap-8 ${getGridClass(speakers.length)}`}>
+          {speakers.map((speaker) => (
+            <div key={speaker.id} className="bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors flex flex-col">
+              <img
+                src={speaker.imageUrl}
+                alt={speaker.name}
+                className="w-full h-65 object-contain rounded-lg mb-4 bg-gray-800" // Keeps image aspect ratio intact
+              />
+              <h3 className="text-xl font-semibold text-white mb-2">{speaker.name}</h3>
+              <p className="text-[#22d3ee] mb-2">{speaker.role}</p>
+              <p className="text-sm text-gray-300 flex-grow">{speaker.description}</p>
+            </div>
+          ))}
         </div>
       </div>
+      {renderSpeakers(Deeptech, "Deeptech Speakers")}
+      {renderSpeakers(Infotech, "Infotech Speakers")}
+      {renderSpeakers(FamilyBusiness, "Family Business Speakers")}
     </section>
   );
 };
 
 export default Speakers;
-

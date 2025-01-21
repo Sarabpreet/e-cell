@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Lock } from 'lucide-react';
+import aa from './1.jpg'; // Ensure this is the correct path to your image
 
 const Payment = () => {
   return (
@@ -13,47 +13,38 @@ const Payment = () => {
           className="text-center mb-12"
         >
           <h2 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400">
-            Secure Payment
+            Book Your Seats Now!!
           </h2>
           <p className="text-xl text-[#22d3ee]">
-            Complete your registration with our secure payment gateway
+            MES 2025 Speakers and Conclave Pass
           </p>
         </motion.div>
 
-        <motion.div
+        {/* Image Section */}
+        <motion.img
+          src={aa}
+          alt="Payment Illustration"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-[#1a1f2e]/80 backdrop-blur-xl rounded-xl p-8 shadow-xl border border-[#22d3ee]/20"
-        >
-          <div className="flex justify-between mb-6">
-            <div>
-              <p className="text-gray-400 mb-1">Transaction ID:</p>
-              <p className="text-[#22d3ee] text-lg">your_transaction_id_here</p>
-            </div>
-            <div className="text-right">
-              <p className="text-gray-400 mb-1">Amount:</p>
-              <p className="text-[#22d3ee] text-lg">₹100</p>
-            </div>
-          </div>
+          className="mb-8 rounded-lg shadow-lg"
+        />
 
-          <div className="flex items-center gap-2 mb-6 text-gray-300">
-            <Lock className="w-4 h-4" />
-            <p className="text-sm">Your payment is secured with industry-standard encryption</p>
-          </div>
+        {/* Pay Now Button */}
+       
 
+        <a href="https://pay.ecellmit.in" target="_blank" rel="noopener noreferrer">
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full bg-gradient-to-r from-[#22d3ee] to-purple-500 text-white py-4 rounded-lg font-medium text-lg flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-[#22d3ee] to-purple-500 text-white py-4 rounded-lg font-medium text-lg flex items-center justify-center gap-2 mt-4"
           >
             Pay Now
           </motion.button>
-        </motion.div>
+        </a>
       </div>
     </section>
   );
 };
 
 export default Payment;
-
