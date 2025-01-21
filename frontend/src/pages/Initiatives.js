@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import bg from "./bcl.png";
+import aa from "./aa.jpg";
 import Meta from "../components/meta";
 
 const InitiativeCard = ({ image, title, description }) => {
@@ -21,7 +21,7 @@ const InitiativeCard = ({ image, title, description }) => {
 const Initiatives = () => {
   const initiatives = [
     {
-      image: "https://i.ibb.co/nmSMsTt/k.jpgy",
+      image: aa,
       title: "E-10 Summit",
       description: `The inaugural E10 Entrepreneurship Summit, held on January 16, 2024, brought together the entrepreneurial communities of MAHE colleges. Organized by E-Cell, MIT Manipal, the event tackled challenges like securing sponsorships, boosting student interest, and improving networking. Insightful discussions set the stage for a stronger entrepreneurial ecosystem in Manipal, inspiring future collaborations and innovation.`,
     },
