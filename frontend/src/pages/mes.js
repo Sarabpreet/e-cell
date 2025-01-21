@@ -20,7 +20,7 @@ const Mes = () => {
       <LightEffects />
       <Navbar />
       <Hero />
-      <VideoSection />
+ 
       <Events />
       <Speakers />
     <Timeline />
