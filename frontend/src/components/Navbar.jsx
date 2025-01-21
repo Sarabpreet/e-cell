@@ -21,12 +21,12 @@ const Navbar = () => {
       <img src={logo_lightt} alt="Logo" className='logo' />
       
       <ul className={isMenuOpen ? 'active' : ''}>
-      <a href="/"><li>Home</li></a>
+      <a href="/"><li>MES</li></a>
       <a href="/Initiatives"><li>Initiatives</li></a>
       <a href="/blog"><li>Blogs</li></a>
       <a href="/AboutUs"><li>About Us</li></a>
       <a href="/MeettheTeam"><li>The Team</li></a>
-      <a href="/mes"><li>MES</li></a>
+      <a href="/Home"><li>E-CELL</li></a>
       
       </ul>
     </div>

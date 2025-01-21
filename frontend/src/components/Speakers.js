@@ -24,17 +24,16 @@ const speakers = [
 
 const Deeptech = [
   { id: 5, name: "Tushar Bhatnagar", role: "Founder, VidBoard AI", description: "AI Powered Futures", imageUrl: d1 },
-  { id: 6, name: "Silky Singh", role: "Founder, Finomial", imageUrl: d2 },
-  { id: 7, name: "Manoj Sankar", role: "Founder, Nemo.Care", imageUrl: d3 },
+  { id: 6, name: "Silky Singh", role: "Founder, Finomial", imageUrl: d3 },
+  { id: 7, name: "Manoj Sankar", role: "Founder, Nemo.Care", imageUrl: d2 },
   { id: 8, name: "Amit Das", role: "Founder, Think 360 AI", imageUrl: d4 }
 ];
 
 const Infotech = [
   { id: 1, name: "Ishan Sukul", role: "Co-Founder, Kreo", description: "From Hostel Rooms to Board Rooms", imageUrl: i1 },
-  { id: 2, name: "Shroat Mehta", role: "Founder’s Office, Kreo", imageUrl: i2 },
-  { id: 3, name: "Dhwanit Shah", role: "Founder, E-Cell MIT", imageUrl: i3 },
-  { id: 4, name: "Rima Naware", role: "Co-Founder, ZigMe", imageUrl: i4 },
-  { id: 14, name: "Tushar Bhatnagar", role: "Deeptech Speaker", imageUrl: i5 }
+  { id: 2, name: "Shroat Mehta", role: "Founder’s Office, Kreo", imageUrl: i5 },
+  { id: 3, name: "Dhwanit Shah", role: "Founder, E-Cell MIT", imageUrl: i4 },
+  { id: 4, name: "Rima Naware", role: "Co-Founder, ZigMe", imageUrl: i3 }
 ];
 
 const FamilyBusiness = [
