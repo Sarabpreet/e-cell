@@ -13,13 +13,18 @@ import i4 from './info tech 4.png';
 import i5 from './info tech 5.png';
 import iqlipseNova from './iqlipse nova.png';
 import rs from './raj shamani.png';
+import a1 from  './aunty.png';
+import a2 from  './chashma.png';
+import a3 from  './abdul.png';
+import a4 from  './ladki.png';
+import a5 from  './faculty-24.png';
 
 const speakers = [
   { id: 9, name: "Dr. Arokiaswamy Velumani", role: "Founder, Thyrocare", description: "Keynote Speaker", imageUrl: img1 },
  
   { id: 11, name: "Raj Shamani", role: "Influencer", imageUrl: rs },
   { id: 13, name: "Iqlipse Nova", role: "Influencer", description: "Influencers’ Conclave", imageUrl: iqlipseNova },
-  { id: 12, name: "Dinesh Pai", role: "VP, Zerodha", description: "Investing in Impact (Fireside Chat)", imageUrl: dineshPai }
+  { id: 12, name: "Dinesh Pai", role: "VP, Zerodha", description: "Investing in Impact (Fireside Chat)", imageUrl:dineshPai }
 ];
 
 const Deeptech = [
@@ -33,15 +38,16 @@ const Infotech = [
   { id: 1, name: "Ishan Sukul", role: "Co-Founder, Kreo", description: "From Hostel Rooms to Board Rooms", imageUrl: i1 },
   { id: 2, name: "Shroat Mehta", role: "Founder’s Office, Kreo", imageUrl: i5 },
   { id: 3, name: "Dhwanit Shah", role: "Founder, E-Cell MIT", imageUrl: i4 },
-  { id: 4, name: "Rima Naware", role: "Co-Founder, ZigMe", imageUrl: i3 }
+  { id: 4, name: "Rima Naware", role: "Co-Founder, ZigMe", imageUrl: i3 },
+  {id:20,name:"Ekta Sharma",role:"Founder, E-Value Advisors",imageUrl:i2}
 ];
 
 const FamilyBusiness = [
-  { id: 15, name: "Dr. Sampath Dorairajan", role: "Business Coach", description: "Family-Owned Organisations", imageUrl: "https://via.placeholder.com/300x300?text=Dr.+Sampath+Dorairajan" },
-  { id: 16, name: "Ms. Vathika Pai", role: "Proprietor", description: "Vathika International Travels", imageUrl: "https://via.placeholder.com/300x300?text=Vathika+Pai" },
-  { id: 17, name: "Mr. Vineeth Vij", role: "Head of Sales", description: "Suvikar Enterprises", imageUrl: "https://via.placeholder.com/300x300?text=Vineeth+Vij" },
-  { id: 18, name: "Ms. Dhara Bhasin", role: "Founder", description: "Baylink", imageUrl: "https://via.placeholder.com/300x300?text=Dhara+Bhasin" },
-  { id: 19, name: "Mr. Ahmed Mudassar", role: "Partner", description: "P.B Abdul Hameed & Sons", imageUrl: "https://via.placeholder.com/300x300?text=Ahmed+Mudassar" }
+  { id: 15, name: "Dr. Sampath Dorairajan", role: "Business Coach", description: "Family-Owned Organisations", imageUrl: a5 },
+  { id: 16, name: "Ms. Vathika Pai", role: "Proprietor", description: "Vathika International Travels", imageUrl: a1 },
+  { id: 17, name: "Mr. Vineeth Vij", role: "Head of Sales", description: "Suvikar Enterprises", imageUrl: a2},
+  { id: 18, name: "Ms. Dhara Bhasin", role: "Founder", description: "Baylink", imageUrl: a4 },
+  { id: 19, name: "Mr. Ahmed Mudassar", role: "Partner", description: "P.B Abdul Hameed & Sons", imageUrl: a3 }
 ];
 
 
