@@ -32,7 +32,7 @@ export default function Timeline() {
   const [hoveredDate, setHoveredDate] = useState('Feb 6')
 
   return (
-    <div className="w-full overflow-hidden py-16 bg-gradient-to-b from-[#0a0f1c] to-[#1a1f2e]">
+    <div className="w-full overflow-hidden py-16 bg-gradient-to-b from-[#1b2a51] to-[#1a1f2e]">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-[#22d3ee] to-purple-400">
           Event Schedule

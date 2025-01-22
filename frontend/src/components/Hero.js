@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center text-center px-4 pt-16 bg-gradient-to-b from-[#0a0f1c] to-[#1a1f2e]">
+    <div className="min-h-screen flex items-center justify-center text-center px-4 pt-16 bg-gradient-to-b from-[#182954] ">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
