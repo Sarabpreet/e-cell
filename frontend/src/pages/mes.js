@@ -15,7 +15,7 @@ import Payment from "../components/Payment";
 
 const Mes = () => {
   return (
-    <div className="min-h-screen bg-[#0a0f1c] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-url('https://i.ibb.co/rdZg1Kr/k.png') text-white overflow-x-hidden">
       <MovingBackground />
       <LightEffects />
       <Navbar />
