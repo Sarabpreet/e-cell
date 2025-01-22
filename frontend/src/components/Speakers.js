@@ -21,7 +21,7 @@ import a5 from  './faculty-24.png';
 import a6 from  './a6.png';
 const speakers = [
   { id: 9, name: "Dr. Arokiaswamy Velumani", role: "Founder, Thyrocare", description: "Keynote Speaker", imageUrl: img1 },
- 
+ {id:100, name:"Ashneer Grover",role:"Shark in 1st Season of Shark Tank India.Previously, MD and Co - Founder at BharatPe",description:"Speaker",imageUrl:ashneer},
   { id: 11, name: "Raj Shamani", role:"Founder: House of X, Host: Figuring Out (India’s #1 Podcast - Spotify) Forbes 30 Under 30", description: "Influencer",imageUrl: rs },
   { id: 13, name: "Iqlipse Nova",role :"Co-founder : BigBrainco , Singer",description: "Influencer", imageUrl: iqlipseNova },
   { id: 12, name: "Dinesh Pai", role: "VP, Zerodha & contributing to climate initiatives and sustainability through Rainmatter Climate Foundation", description: "Investing in Impact (Fireside Chat) ", imageUrl:dineshPai }
