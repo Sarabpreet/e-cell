@@ -20,7 +20,7 @@ const EventCard = ({ event }) => (
           rel="noopener noreferrer"
           className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-4 rounded hover:from-cyan-600 hover:to-blue-600 transition-all duration-300"
         >
-          Learn More
+          Register Now
         </a>
       )}
     </div>
