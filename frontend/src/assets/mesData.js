@@ -36,10 +36,19 @@ export const maheEvents = [
     {
         title: "MONEYQUEST",
         description: "An exhilarating event that combines the excitement of a treasure hunt with the strategic thrill of a bidding competition involving a dynamic landscape of strategy, negotiation, and resource management",
-        image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/677bd008928a0_money-quest.webp?d=1920x557"
+        image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/677bd008928a0_money-quest.webp?d=1920x557",
+      postURL:"https://unstop.com/competitions/money-quest-manipal-entrepreneurship-summit-2025-manipal-academy-of-higher-education-mahe-karnataka-1346686"
 
        
-    }
+    },
+    {
+      title: "MISMATCH",
+      description: "his event challenges participants to think outside the box, innovate on the spot, and align their ideas with real-world business scenarios. It is designed to test creativity, problem-solving, and strategic thinking across three exciting rounds.",
+      image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/679250b17f367_mismatched.webp?d=1920x557",
+    postURL:"https://unstop.com/competitions/mismatched-manipal-entrepreneurship-summit-2025-manipal-academy-of-higher-education-mahe-karnataka-1350160"
+
+     
+  }
 ];
 
 export const CONTACT_INFO = {
