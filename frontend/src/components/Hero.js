@@ -1,12 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sp1 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/1.1 Caprese.png";
+import sp1 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-27 at 11.09.52 PM.png";
 import sp2 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/MTL Logo.png";
-import sp3 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/KarMic logo (4).png";
+import sp3 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-27 at 11.40.24 PM.png";
 import sp4 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-25 at 2.03.49 PM.png";
 import sp6 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/assets/Screenshot 2025-01-26 at 1.30.08 AM.png";
 import sp5 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Acer-logo-digital-green.png";
-const sponsors = [sp1, sp2, sp3, sp4,sp5,sp6]; // List of all sponsor logos
+import sp7 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/ICICI_Bank_Logo.png";
+import sp8 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Yourstory logo (2).png";
+import sp9 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Fashion Herald Logo.png";
+const sponsors = [sp1, sp8, sp2, sp3, sp9, sp4, sp5, sp6, sp7]; // List of all sponsor logos
 
 function Hero() {
   return (
@@ -29,7 +32,7 @@ function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-lg md:text-xl text-gray-300 mb-6"
         >
-          The flagship event of MAHE organized by E-Cell, MIT Manipal
+          The flagship event of MAHE organized by E-Cell MIT Manipal
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -80,14 +83,18 @@ function Hero() {
             }}
           >
             {/* Logos */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-16">
               {/* Render the logos multiple times to ensure an infinite scroll */}
               {Array(10000).fill().map((_, index) => (
                 <img
                   key={index}
                   src={sponsors[index % sponsors.length]} // Repeats logos in cycle
                   alt={`Sponsor ${index + 1}`}
-                  className="h-16 md:h-18 object-contain"
+                  className={`h-12 object-contain ${
+                    index % sponsors.length === 2 || index % sponsors.length === 3
+                      ? 'md:h-24 w-24' // Custom height and width for sp2 and sp3
+                      : 'h-12' // Default height for other logos
+                  }`}
                 />
               ))}
             </div>

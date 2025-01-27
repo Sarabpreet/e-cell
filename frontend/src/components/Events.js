@@ -38,18 +38,17 @@ const Events = () => {
         
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
-            Flagship & MAHE Events
+            Flagship 
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="flex items-center justify-center min-h-screen">
+             <div className="grid grid-cols-1 sm:grid-cols-1 justify-center gap-8 max-w-xl mx-auto">  
             {flagshipEvents.map((event) => (
-              <EventCard key={event.title} event={event} />
-            ))}
-            {maheEvents.map((event) => (
               <EventCard key={event.title} event={event} />
             ))}
           </div>
         </div>
-        
+        </div>
+
         <div>
           <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
             Pan India Events
@@ -62,11 +61,22 @@ const Events = () => {
          
 <div classname='flex-auto justify-center items-center'>
            <h4 className='flex items-center justify-center '>
-  Powered by
-  <img className='w-15 h-20' src={sp3} alt='Manipal Technologies' />
+  Powered By
+  <img className='w-21 l:h-30' src={sp3} alt='Manipal Technologies' />
 </h4>
 </div>
 
+          </div>
+        </div>
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
+            MAHE Events
+          </h3>
+          
+          <div className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {maheEvents.map((event) => (
+              <EventCard key={event.title} event={event} />
+            ))}
           </div>
         </div>
       </div>
