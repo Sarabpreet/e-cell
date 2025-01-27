@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sp1 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/1.1 Caprese.png";
-import sp2 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/MTL Logo.png";
-import sp3 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/KarMic logo (4).png";
-import sp4 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-25 at 2.03.49 PM.png";
-import sp6 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/assets/Screenshot 2025-01-26 at 1.30.08 AM.png";
-import sp5 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Acer-logo-digital-green.png";
+import sp1 from "./1.1 Caprese.png";
+import sp2 from "./MTL Logo.png";
+import sp3 from "./KarMic logo (4).png";
+import sp4 from "./Screenshot 1.png";
+import sp6 from "./Screenshot 2.png";
+import sp5 from "./Acer-logo-digital-green.png";
 const sponsors = [sp1, sp2, sp3, sp4,sp5,sp6]; // List of all sponsor logos
 
 function Hero() {
@@ -70,7 +70,7 @@ function Hero() {
               x: {
                 repeat: Infinity,
                 repeatType: 'loop',
-                duration: 7000,  // Control the speed here
+                duration: 10000,  // Control the speed here
                 ease: 'linear', // Smooth continuous animation
               },
             }}
