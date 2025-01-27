@@ -4,7 +4,7 @@ import sp1 from "./1.1 Caprese.png";
 import sp2 from "./MTL Logo.png";
 import sp3 from "./KarMic logo (4).png";
 import sp4 from "./Screenshot 1.png";
-import sp6 from "./Screenshot 2.png";
+
 import sp5 from "./Acer-logo-digital-green.png";
 const sponsors = [sp1, sp2, sp3, sp4,sp5,sp6]; // List of all sponsor logos
 
