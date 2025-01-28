@@ -4,7 +4,7 @@ const timelineEvents = [
   {
     date: 'Feb 6',
     events: [
-      { time: '02:00 PM', title: 'Inaugration Ceremony',speaker:'Quadrangle, MIT' },
+      { time: '02:00 PM', title: 'Inauguration Ceremony',speaker:'Quadrangle, MIT' },
       { time: '06:00 PM',title: 'Deep Tech Conclave',speaker:'M V Seminar Hall, MIT' },
     ]
   },
@@ -24,6 +24,7 @@ const timelineEvents = [
     events: [
       { time: '09:00 AM', title: 'Innovation Mela',speaker:'MIT' },
       { time: '06:00 PM',title: "Influencer's Conclave",speaker:'Quadrangle, MIT'  },
+      { time: '12:00 Noon',title: "Casemaze",speaker:'M.V. Seminar Hall'  },
     ]
   },
 ]

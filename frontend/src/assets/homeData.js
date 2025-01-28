@@ -1,6 +1,6 @@
 export const stats = [
     { icon: null, number: '200+', label: 'Members' },
-    { icon: null, number: '100+', label: 'Startup Associated' },
+    { icon: null, number: '100+', label: 'Startups Associated' },
     { icon: null, number: '10+', label: 'VCs and Mentors onboarded' },
 ];
 
