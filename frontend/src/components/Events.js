@@ -1,6 +1,6 @@
 import React from 'react';
 import { flagshipEvents, panIndiaEvents, maheEvents } from '../assets/mesData';
-import sp3 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/MTL Logo.png";
+import sp3 from "./MTL Logo.png";
 
 const EventCard = ({ event }) => (
   <div className="bg-white/10 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
@@ -59,12 +59,16 @@ const Events = () => {
             
             ))}
          
+<<<<<<< HEAD
 <div classname='flex-auto justify-center items-center'>
            <h4 className='flex items-center justify-center '>
   Powered By
   <img className='w-21 l:h-30' src={sp3} alt='Manipal Technologies' />
 </h4>
 </div>
+=======
+
+>>>>>>> 4a50d200da6d09971d5614da8598d4a5854be518
 
           </div>
         </div>

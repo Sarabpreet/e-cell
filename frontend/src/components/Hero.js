@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sp1 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-27 at 11.09.52 PM.png";
-import sp2 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/MTL Logo.png";
-import sp3 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-27 at 11.40.24 PM.png";
-import sp4 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Screenshot 2025-01-25 at 2.03.49 PM.png";
-import sp6 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/assets/Screenshot 2025-01-26 at 1.30.08 AM.png";
-import sp5 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Acer-logo-digital-green.png";
-import sp7 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/ICICI_Bank_Logo.png";
-import sp8 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Yourstory logo (2).png";
-import sp9 from "/Users/jeffronnie/Documents/ecellweb/e-celll/mes/e-cell/frontend/src/components/Fashion Herald Logo.png";
+import sp1 from "./Screenshot 2025-01-27 at 11.09.52 PM.png";
+import sp2 from "./Screenshot 2025-01-28 at 4.21.17 PM.png";
+import sp3 from "./Screenshot 2025-01-27 at 11.40.24 PM.png";
+import sp4 from "./Screenshot 2025-01-25 at 2.03.49 PM.png";
+import sp6 from "./Screenshot 2025-01-28 at 4.24.46 PM.png";
+import sp5 from "./Acer-logo-digital-green.png";
+import sp7 from "./ICICI_Bank_Logo.png";
+import sp8 from "./Fashion Herald Logo.png";
+import sp9 from "./Yourstory logo (2).png";
 const sponsors = [sp1, sp8, sp2, sp3, sp9, sp4, sp5, sp6, sp7]; // List of all sponsor logos
 
 function Hero() {
@@ -90,9 +90,9 @@ function Hero() {
                   key={index}
                   src={sponsors[index % sponsors.length]} // Repeats logos in cycle
                   alt={`Sponsor ${index + 1}`}
-                  className={`h-12 object-contain ${
-                    index % sponsors.length === 2 || index % sponsors.length === 3
-                      ? 'md:h-24 w-24' // Custom height and width for sp2 and sp3
+                  className={`h-15 object-contain ${
+                    index % sponsors.length === 1 || index % sponsors.length === 3
+                      ? 'l:h-24 w-24' // Custom height and width for sp2 and sp3
                       : 'h-12' // Default height for other logos
                   }`}
                 />
