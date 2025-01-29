@@ -96,11 +96,7 @@ const infotechSpeakers = [
     role: "Founder's Office, Kreo",
     image: infoTech5Image,
   },
-  {
-    name: "Shroat Mehta",
-    role: "Founder's Office, Kreo",
-    image: infoTech5Image,
-  },
+  
   {
     name: "Dhwanit Shah",
     role: "Founder, E-Cell MIT",

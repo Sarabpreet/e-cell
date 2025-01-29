@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sp1 from "./Screenshot 2025-01-27 at 11.09.52 PM.png";
-import sp2 from "./Screenshot 2025-01-28 at 4.21.17 PM.png";
+import sp1 from './Screenshot 1.png';
+import sp2 from "./Screenshot 2025-01-27 at 11.09.52 PM.png";
 import sp3 from "./Screenshot 2025-01-27 at 11.40.24 PM.png";
-import sp4 from "./Screenshot 2025-01-25 at 2.03.49 PM.png";
-import sp6 from "./Screenshot 2025-01-28 at 4.24.46 PM.png";
+import sp4 from "./Screenshot 2025-01-28 at 3.12.24 AM.png";
 import sp5 from "./Acer-logo-digital-green.png";
-import sp7 from "./ICICI_Bank_Logo.png";
+ import sp6 from "./ICICI_Bank_Logo.png";
+ import sp7 from"./Screenshot 2025-01-29 at 11.29.47 PM.png";
 import sp8 from "./Fashion Herald Logo.png";
 import sp9 from "./Yourstory logo (2).png";
-const sponsors = [sp1, sp8, sp2, sp3, sp9, sp4, sp5, sp6, sp7]; // List of all sponsor logos
+const sponsors = [sp1,sp2,sp3, sp4, sp9, sp8, sp6, sp5, sp7, sp8, sp9]; // List of all sponsor logos
 
 function Hero() {
   return (
