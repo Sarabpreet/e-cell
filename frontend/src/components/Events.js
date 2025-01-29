@@ -59,12 +59,12 @@ const Events = () => {
             
             ))}
          
-<div classname='flex-auto justify-center items-center'>
+{/* <div classname='flex-auto justify-center items-center'>
            <h4 className='flex items-center justify-center '>
   Powered By
   <img className='w-21 l:h-30' src={sp3} alt='Manipal Technologies' />
 </h4>
-</div>
+</div> */}
 
           </div>
         </div>
