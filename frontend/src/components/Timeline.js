@@ -4,7 +4,7 @@ const timelineEvents = [
   {
     date: 'Feb 6',
     events: [
-      { time: '02:00 PM', title: 'Inauguration Ceremony',speaker:'Quadrangle, MIT' },
+      { time: '02:00 PM', title: 'Inauguration Ceremony & Keynote Session',speaker:'Quadrangle, MIT' },
       { time: '06:00 PM',title: 'Deep Tech Conclave',speaker:'M V Seminar Hall, MIT' },
     ]
   },
@@ -41,7 +41,7 @@ export default function Timeline() {
         
         <div className="relative">
           {/* Timeline */}
-          <div className="flex justify-between mb-8">
+          <div className="flex justify-between ">
             {timelineEvents.map((day, index) => (
               <div
                 key={day.date}
@@ -73,10 +73,9 @@ export default function Timeline() {
                   key={index}
                   className="flex items-start space-x-4"
                 >
-                  <div className="w-24 flex-shrink-0">
-                    <div className="text-lg font-semibold text-[#22d3ee]">{event.time}</div>
-                  </div>
+                 
                   <div className="flex-grow bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
+                  <div className="text-lg font-semibold text-[#22d3ee]">{event.time}</div>
                     <h4 className="text-xl font-semibold text-white mb-2">{event.title}</h4>
                     {event.speaker && (
                       <p className="text-purple-400">Venue: {event.speaker}</p>

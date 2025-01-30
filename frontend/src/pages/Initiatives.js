@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import aa from "./aa.jpg";
 import Meta from "../components/meta";
-import bc from "./bc.png"
+import bc from "./bc.png";
 
 const InitiativeCard = ({ image, title, description }) => {
   return (

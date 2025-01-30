@@ -30,17 +30,17 @@ const EventCard = ({ event }) => (
 
 const Events = () => {
   return (
-    <section className="py-20 px-4" id="events">
+    <section className="pt-6 px-4" id="events">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#22d3ee] to-purple-400 mb-12">
           Events
         </h2>
         
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
+        <div className="mb-10">
+          <h3 className="text-3xl  pb-8 font-bold text-[#22d3ee]  text-center">
             Flagship 
           </h3>
-          <div className="flex items-center justify-center min-h-screen">
+          <div className="flex items-center justify-center max-h-screen">
              <div className="grid grid-cols-1 sm:grid-cols-1 justify-center gap-8 max-w-xl mx-auto">  
             {flagshipEvents.map((event) => (
               <EventCard key={event.title} event={event} />
@@ -50,25 +50,29 @@ const Events = () => {
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
-            Pan India Events
-          </h3>
+          <h3 className="text-3xl font-bold text-[#22d3ee]  text-center">
+            Pan India Events  </h3><div className='max-h screen '>
+             
+           <div className='text-white flex items-center justify-center '>
+  Powered by
+  <img className='w-24 md:h-16 font-bold' align-middle src={sp3} alt='Manipal Technologies' />
+</div>
+  
+</div>
+
+      
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {panIndiaEvents.map((event) => (
               <EventCard key={event.title} event={event} />
             
             ))}
          
-<div classname='flex-auto justify-center items-center'>
-           <h4 className='flex items-center justify-center '>
-  Powered By
-  <img className='w-21 l:h-30' src={sp3} alt='Manipal Technologies' />
-</h4>
-</div>
+
+
 
           </div>
         </div>
-        <div className="mb-16">
+        <div className="mt-16">
           <h3 className="text-3xl font-bold text-[#22d3ee] mb-8 text-center">
             MAHE Events
           </h3>
