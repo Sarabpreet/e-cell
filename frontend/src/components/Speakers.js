@@ -31,7 +31,7 @@ const keynoteSpeakers = [
   },
   {
     name: "Ashneer Grover",
-    role: "Shark in 1st Season of Shark Tank India Previously, MD and Co-Founder at BharatPe",
+    role: " Co-Founder of BharatPe,Third Unicorn",
     type: "Keynote Speaker",
     image: ashneerImage,
   },
@@ -40,7 +40,8 @@ const keynoteSpeakers = [
 const influencerSpeakers = [
   {
     name: "Raj Shamani",
-    role: "Founder, House of X, Host, Spotify's #1 Podcast, Figuring Out, Forbes 30 Under 30",
+    role: " Spotify's #1 Podcast",
+    subtitle:"Founder, House of X",
     type: "Influencer",
     image: rajShamaniImage,
   },
@@ -55,7 +56,7 @@ const influencerSpeakers = [
 const firesideSpeakers = [
   {
     name: "Dinesh Pai",
-    role: "VP, Zerodha & contributing to climate initiatives and sustainability through Rainmatter Climate Foundation",
+    role: "VicePresident, Zerodha",
     type: "Fireside Chat",
     image: dineshPaiImage,
   },
