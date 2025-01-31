@@ -6,10 +6,11 @@ import aubg from "./aubg.jpg";
 
 import icECellPic from "../assets/images/InnovationCentre_ECellPic.jpg";
 import boardPicReveal from "../assets/images/Reveal_Board_Faculty_Pic_2025.jpg";
-// import mesBanner from "../assets/images/MES_2025_Banner.jpg";
+import mesBanner from "../assets/images/MES_Creative_Handout_Banner.jpg";
+
 // Placeholder Images for the Carousel
 const images = [
-  // mesBanner,
+  mesBanner,
   boardPicReveal,
   icECellPic
 ];
@@ -45,7 +46,7 @@ const MTApp = () => {
                     <img
                       src={image}
                       alt={`Event ${index + 1}`}
-                      className="w-full h-auto max-h-max object-cover"
+                      className="w-full h-auto max-h-[500px] object-scale-down"
                       loading="lazy"
                     />
                   </div>
