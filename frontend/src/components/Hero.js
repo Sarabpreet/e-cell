@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import sp1 from './Screenshot 1.png';
-import sp2 from "./Screenshot 2025-01-27 at 11.09.52 PM.png";
-import sp3 from "./Screenshot 2025-01-27 at 11.40.24 PM.png";
-import sp4 from "./Screenshot 2025-01-28 at 3.12.24 AM.png";
+import sp2 from "./Screenshot_2025-01-27_at_11.09.52_PM-removebg-preview.png";
+import sp3 from "./KarMic logo (4).png";
+import sp4 from "./Screenshot_2025-01-28_at_3.12.24_AM-removebg-preview.png";
 import sp5 from "./Acer-logo-digital-green.png";
  import sp6 from "./ICICI_Bank_Logo.png";
  import sp7 from"./Screenshot 2025-01-29 at 11.29.47 PM.png";
 import sp8 from "./Fashion Herald Logo.png";
 import sp9 from "./Yourstory logo (2).png";
-const sponsors = [sp1,sp2,sp3, sp4, sp9, sp8, sp6, sp5, sp7, sp8, sp9]; // List of all sponsor logos
+const sponsors = [sp1,sp2,sp3, sp4,sp9, sp5, sp6, sp7, sp8]; // List of all sponsor logos
 
 function Hero() {
   return (
@@ -83,20 +83,16 @@ function Hero() {
             }}
           >
             {/* Logos */}
-            <div className="flex space-x-16">
-              {/* Render the logos multiple times to ensure an infinite scroll */}
-              {Array(10000).fill().map((_, index) => (
-                <img
-                  key={index}
-                  src={sponsors[index % sponsors.length]} // Repeats logos in cycle
-                  alt={`Sponsor ${index + 1}`}
-                  className={`h-15 object-contain ${
-                    index % sponsors.length === 1 || index % sponsors.length === 3
-                      ? 'l:h-24 w-24' // Custom height and width for sp2 and sp3
-                      : 'h-12' // Default height for other logos
-                  }`}
-                />
-              ))}
+            <div className="flex justify-center items-center space-x-12 flex-wrap">
+  {/* Render the logos multiple times to ensure an infinite scroll */}
+  {Array(10000).fill().map((_, index) => (
+    <img
+      key={index}
+      src={sponsors[index % sponsors.length]} // Repeats logos in cycle
+      alt={`Sponsor ${index + 1}`}
+      className="h-16 xs:h-16 object-contain" // Uniform size for all logos
+    />
+  ))}
             </div>
           </motion.div>
         </div>

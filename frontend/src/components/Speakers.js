@@ -5,7 +5,7 @@ import ashneerImage from "./ashneer.png"
 import rajShamaniImage from "./raj shamani.png"
 import iqlipseNovaImage from "./iqlipse nova.png"
 import dineshPaiImage from "./dinesh pai.png"
-import deepTech1Image from "./deep tech 1.png"
+import deepTech1Image from "./Screenshot 2025-01-31 at 1.57.55 AM.png"
 import deepTech2Image from "./deep tech 2.png"
 import deepTech3Image from "./deep tech 3.png"
 import deepTech4Image from "./deep tech 4.png"
@@ -14,6 +14,7 @@ import infoTech2Image from "./info tech 2.png"
 import infoTech3Image from "./info tech 3.png"
 import infoTech4Image from "./info tech 4.png"
 import infoTech5Image from "./info tech 5.png"
+import infoTech6Image from "./Screenshot 2025-01-30 at 7.55.44 PM.png";
 import facultyImage from "./faculty-24.png"
 import a6Image from "./a6.png"
 import auntyImage from "./aunty.png"
@@ -30,7 +31,7 @@ const keynoteSpeakers = [
   },
   {
     name: "Ashneer Grover",
-    role: "Shark in 1st Season of Shark Tank India Previously, MD and Co-Founder at BharatPe",
+    role: " Co-Founder of BharatPe,Third Unicorn",
     type: "Keynote Speaker",
     image: ashneerImage,
   },
@@ -39,7 +40,8 @@ const keynoteSpeakers = [
 const influencerSpeakers = [
   {
     name: "Raj Shamani",
-    role: "Founder, House of X, Host, Spotify's #1 Podcast, Figuring Out, Forbes 30 Under 30",
+    role: " Spotify's #1 Podcast",
+    subtitle:"Founder, House of X",
     type: "Influencer",
     image: rajShamaniImage,
   },
@@ -54,7 +56,7 @@ const influencerSpeakers = [
 const firesideSpeakers = [
   {
     name: "Dinesh Pai",
-    role: "VP, Zerodha & contributing to climate initiatives and sustainability through Rainmatter Climate Foundation",
+    role: "VicePresident, Zerodha",
     type: "Fireside Chat",
     image: dineshPaiImage,
   },
@@ -95,6 +97,11 @@ const infotechSpeakers = [
     name: "Shroat Mehta",
     role: "Founder's Office, Kreo",
     image: infoTech5Image,
+  },
+  {
+    name: "Surya Kant",
+    role: "Program Director,MeitY",
+    image: infoTech6Image,
   },
   
   {
