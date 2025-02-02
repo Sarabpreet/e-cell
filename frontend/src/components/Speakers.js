@@ -32,7 +32,7 @@ const keynoteSpeakers = [
   {
     name: "Ashneer Grover",
     role: " Co-Founder of BharatPe,Third Unicorn",
-    type: "Keynote Speaker",
+    type: "Distinguished Speaker",
     image: ashneerImage,
   },
 ]

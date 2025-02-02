@@ -73,7 +73,7 @@ function Hero() {
               x: {
                 repeat: Infinity,
                 repeatType: 'loop',
-                duration: 7000,  // Control the speed here
+                duration: 12000,  // Control the speed here
                 ease: 'linear', // Smooth continuous animation
               },
             }}
