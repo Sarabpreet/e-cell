@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aa from './1.png'; // Ensure this is the correct path to your image
+import aa from './he.png'; // Ensure this is the correct path to your image
 
 const Payment = () => {
   return (
