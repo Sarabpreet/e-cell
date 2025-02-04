@@ -12,6 +12,7 @@ import LightEffects from "../components/LightEffects";
 import Timeline from "../components/Timeline";
 import VideoSection from "../components/VideoSection";
 import Payment from "../components/Payment";
+import ARCard from "../components/ARCard";
 
 const Mes = () => {
   return (
@@ -20,13 +21,12 @@ const Mes = () => {
       <LightEffects />
       <Navbar />
       <Hero />
- <Payment/>
+      <Payment />
+      <ARCard />
       <Events />
       <Speakers />
-    <Timeline />
-
+      <Timeline />
       <Footer />
-
     </div>
   );
 }
